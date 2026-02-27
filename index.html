@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Today's Picks</title>
+  <title>This Week's Picks</title>
   <style>
-    /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -44,11 +43,7 @@
       gap: 12px;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .logo { display: flex; align-items: center; gap: 10px; }
 
     .logo-icon {
       width: 36px; height: 36px;
@@ -58,21 +53,10 @@
       font-size: 18px;
     }
 
-    .logo h1 {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.3px;
-    }
-
+    .logo h1 { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
     .logo h1 span { color: var(--accent); }
 
-    .header-meta {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    .header-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
     .date-badge {
       background: var(--surface2);
@@ -84,10 +68,7 @@
       font-weight: 500;
     }
 
-    #last-updated {
-      font-size: 11px;
-      color: var(--muted);
-    }
+    #last-updated { font-size: 11px; color: var(--muted); }
 
     /* ── Summary Bar ── */
     .summary-bar {
@@ -117,16 +98,11 @@
       margin-bottom: 4px;
     }
 
-    .stat-card .value {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1;
-    }
-
+    .stat-card .value { font-size: 22px; font-weight: 700; line-height: 1; color: var(--text); }
     .stat-card .value.green  { color: var(--green); }
     .stat-card .value.red    { color: var(--red); }
     .stat-card .value.yellow { color: var(--yellow); }
+    .stat-card .value.blue   { color: var(--accent); }
 
     /* ── Tabs ── */
     .tabs {
@@ -134,6 +110,7 @@
       gap: 4px;
       padding: 16px 24px 0;
       overflow-x: auto;
+      border-bottom: 1px solid var(--border);
     }
 
     .tab {
@@ -148,49 +125,76 @@
       padding: 8px 16px;
       transition: all 0.15s;
       white-space: nowrap;
+      margin-bottom: -1px;
     }
 
     .tab:hover { color: var(--text); background: var(--surface2); }
 
     .tab.active {
-      background: var(--surface);
+      background: var(--bg);
       border-color: var(--border);
+      border-bottom-color: var(--bg);
       color: var(--accent);
     }
 
     .tab .count {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center;
       background: var(--surface2);
       border-radius: 10px;
-      font-size: 10px;
-      height: 16px;
-      min-width: 16px;
-      padding: 0 4px;
-      margin-left: 6px;
+      font-size: 10px; height: 16px; min-width: 16px;
+      padding: 0 4px; margin-left: 6px;
       color: var(--text2);
     }
 
     .tab.active .count { background: var(--accent); color: #fff; }
 
-    /* ── Main Content ── */
-    main {
-      padding: 0 24px 24px;
-    }
-
-    .section {
-      display: none;
-      padding-top: 20px;
-    }
-
+    /* ── Main ── */
+    main { padding: 0 24px 24px; }
+    .section { display: none; padding-top: 20px; }
     .section.active { display: block; }
 
-    /* ── Pick Cards ── */
+    /* ── Day Groups ── */
+    .day-group { margin-bottom: 32px; }
+
+    .day-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .day-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text2);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+    }
+
+    .day-label.today { color: var(--accent); }
+
+    .day-record {
+      font-size: 11px;
+      color: var(--muted);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 2px 8px;
+      white-space: nowrap;
+    }
+
+    .day-heading hr {
+      flex: 1;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Cards ── */
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
     }
 
     .card {
@@ -202,106 +206,67 @@
     }
 
     .card:hover { border-color: #3a4060; }
-
-    .card.win   { border-left: 3px solid var(--green); }
-    .card.loss  { border-left: 3px solid var(--red); }
-    .card.push  { border-left: 3px solid var(--muted); }
+    .card.win     { border-left: 3px solid var(--green); }
+    .card.loss    { border-left: 3px solid var(--red); }
+    .card.push    { border-left: 3px solid var(--muted); }
     .card.pending { border-left: 3px solid var(--accent); }
 
     .card-header {
       background: var(--surface2);
-      padding: 10px 14px;
+      padding: 9px 13px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
     }
 
-    .matchup {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.3;
-    }
+    .matchup { font-size: 13px; font-weight: 600; line-height: 1.3; }
 
     .sport-tag {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 2px 8px;
-      border-radius: 4px;
-      flex-shrink: 0;
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      padding: 2px 7px; border-radius: 4px; flex-shrink: 0;
     }
 
-    .sport-tag.nba  { background: #1a3a5c; color: #60a5fa; }
-    .sport-tag.cbb  { background: #1a3a2a; color: #4ade80; }
-    .sport-tag.prop { background: #2d1a5c; color: #c084fc; }
+    .sport-tag.nba { background: #1a3a5c; color: #60a5fa; }
+    .sport-tag.cbb { background: #1a3a2a; color: #4ade80; }
 
-    .card-body { padding: 12px 14px; }
+    .card-body { padding: 11px 13px; }
 
-    .pick-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
+    .pick-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
 
-    .pick-badge {
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--text);
-    }
-
+    .pick-badge { font-size: 15px; font-weight: 800; color: var(--text); }
     .pick-badge.over  { color: var(--green); }
     .pick-badge.under { color: #f97316; }
 
-    .pick-detail {
-      font-size: 12px;
-      color: var(--text2);
-      line-height: 1.4;
-    }
+    .pick-detail { font-size: 12px; color: var(--text2); line-height: 1.4; }
 
-    .meta-row {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
+    .meta-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
 
     .chip {
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      display: flex; align-items: center; gap: 4px;
       background: var(--surface2);
       border: 1px solid var(--border);
       border-radius: 5px;
-      padding: 3px 8px;
-      font-size: 11px;
-      color: var(--text2);
+      padding: 2px 7px;
+      font-size: 11px; color: var(--text2);
     }
 
-    .chip .icon { font-size: 10px; }
-    .chip.edge-chip { color: #fbbf24; border-color: #3a3020; background: #1e1a0e; }
-    .chip.conf-high { color: var(--green); border-color: #1a3a20; background: #0e1e0e; }
-    .chip.conf-med  { color: var(--yellow); border-color: #3a2e10; background: #1e1a0a; }
-    .chip.conf-low  { color: var(--muted); }
+    .chip.edge-chip  { color: #fbbf24; border-color: #3a3020; background: #1e1a0e; }
+    .chip.conf-high  { color: var(--green); border-color: #1a3a20; background: #0e1e0e; }
+    .chip.conf-med   { color: var(--yellow); border-color: #3a2e10; background: #1e1a0a; }
+    .chip.conf-low   { color: var(--muted); }
 
     .card-footer {
       border-top: 1px solid var(--border);
-      padding: 8px 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 7px 13px;
+      display: flex; align-items: center; justify-content: space-between;
     }
 
     .status-badge {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 2px 8px;
-      border-radius: 4px;
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      padding: 2px 7px; border-radius: 4px;
     }
 
     .status-badge.win     { background: #0e2a18; color: var(--green); }
@@ -309,52 +274,24 @@
     .status-badge.push    { background: #1e1e1e; color: var(--muted); }
     .status-badge.pending { background: #0e1a38; color: var(--accent); }
 
-    .result-score {
-      font-size: 11px;
-      color: var(--muted);
-    }
+    .result-score { font-size: 11px; color: var(--muted); }
 
-    /* ── Empty State ── */
-    .empty {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--muted);
-    }
-
+    /* ── Empty / Loading ── */
+    .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
     .empty .icon { font-size: 40px; margin-bottom: 12px; }
     .empty p { font-size: 14px; }
 
-    /* ── Loading ── */
-    #loading {
-      text-align: center;
-      padding: 60px;
-      color: var(--muted);
-    }
+    #loading { text-align: center; padding: 60px; color: var(--muted); }
 
     .spinner {
-      display: inline-block;
-      width: 28px; height: 28px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
+      display: inline-block; width: 28px; height: 28px;
+      border: 3px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.7s linear infinite;
       margin-bottom: 12px;
     }
 
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── Error ── */
-    .error-banner {
-      background: #2a0e0e;
-      border: 1px solid #5a1a1a;
-      border-radius: var(--radius);
-      color: #fca5a5;
-      font-size: 13px;
-      margin: 20px 0;
-      padding: 14px 16px;
-    }
-
-    /* ── Responsive ── */
     @media (max-width: 600px) {
       header, .summary-bar, .tabs, main { padding-left: 14px; padding-right: 14px; }
       .cards-grid { grid-template-columns: 1fr; }
@@ -366,17 +303,17 @@
 <header>
   <div class="logo">
     <div class="logo-icon">🎯</div>
-    <h1>Today's <span>Picks</span></h1>
+    <h1>This Week's <span>Picks</span></h1>
   </div>
   <div class="header-meta">
-    <div class="date-badge" id="today-date">—</div>
+    <div class="date-badge" id="week-range">—</div>
     <div id="last-updated">Loading...</div>
   </div>
 </header>
 
 <div class="summary-bar">
   <div class="stat-card">
-    <div class="label">Today's Picks</div>
+    <div class="label">Week Picks</div>
     <div class="value yellow" id="stat-total">—</div>
   </div>
   <div class="stat-card">
@@ -389,55 +326,43 @@
   </div>
   <div class="stat-card">
     <div class="label">Pending</div>
-    <div class="value" id="stat-pending">—</div>
+    <div class="value blue" id="stat-pending">—</div>
   </div>
   <div class="stat-card">
     <div class="label">Win %</div>
     <div class="value green" id="stat-pct">—</div>
   </div>
+  <div class="stat-card">
+    <div class="label">Today</div>
+    <div class="value" id="stat-today">—</div>
+  </div>
 </div>
 
 <div class="tabs">
-  <button class="tab active" data-section="all">All Picks <span class="count" id="count-all">0</span></button>
+  <button class="tab active" data-section="all">All <span class="count" id="count-all">0</span></button>
   <button class="tab" data-section="nba-spreads">NBA Spreads <span class="count" id="count-nba-spreads">0</span></button>
   <button class="tab" data-section="nba-totals">NBA Totals <span class="count" id="count-nba-totals">0</span></button>
   <button class="tab" data-section="cbb-spreads">CBB Spreads <span class="count" id="count-cbb-spreads">0</span></button>
   <button class="tab" data-section="cbb-totals">CBB Totals <span class="count" id="count-cbb-totals">0</span></button>
-  <button class="tab" data-section="props">Props <span class="count" id="count-props">0</span></button>
 </div>
 
 <main>
   <div id="loading">
     <div class="spinner"></div>
-    <p>Loading today's picks...</p>
+    <p>Loading this week's picks...</p>
   </div>
 
-  <div id="error-container"></div>
-
-  <div class="section active" id="section-all">
-    <div class="cards-grid" id="grid-all"></div>
-  </div>
-  <div class="section" id="section-nba-spreads">
-    <div class="cards-grid" id="grid-nba-spreads"></div>
-  </div>
-  <div class="section" id="section-nba-totals">
-    <div class="cards-grid" id="grid-nba-totals"></div>
-  </div>
-  <div class="section" id="section-cbb-spreads">
-    <div class="cards-grid" id="grid-cbb-spreads"></div>
-  </div>
-  <div class="section" id="section-cbb-totals">
-    <div class="cards-grid" id="grid-cbb-totals"></div>
-  </div>
-  <div class="section" id="section-props">
-    <div class="cards-grid" id="grid-props"></div>
-  </div>
+  <div class="section active" id="section-all"></div>
+  <div class="section" id="section-nba-spreads"></div>
+  <div class="section" id="section-nba-totals"></div>
+  <div class="section" id="section-cbb-spreads"></div>
+  <div class="section" id="section-cbb-totals"></div>
 </main>
 
 <script>
-// ── CONFIG — update these two lines ─────────────────────────────────────────
-const GITHUB_USER = "iamsnowblinded-afk";   // e.g. "johndoe"
-const GITHUB_REPO = "my-picks";         // e.g. "my-picks"
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+const GITHUB_USER = "iamsnowblinded-afk";
+const GITHUB_REPO = "my-picks";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data`;
@@ -447,32 +372,54 @@ const SOURCES = [
   { url: `${BASE}/totals_ledger.json`,      type: "nba-totals",  label: "NBA" },
   { url: `${BASE}/cbb_spreads_ledger.json`, type: "cbb-spreads", label: "CBB" },
   { url: `${BASE}/cbb_totals_ledger.json`,  type: "cbb-totals",  label: "CBB" },
-  { url: `${BASE}/props_ledger.json`,       type: "props",       label: "PROP" },
 ];
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
-function todayStr() {
-  const d = new Date();
+// ── Date Helpers ──────────────────────────────────────────────────────────────
+function getWeekBounds() {
+  const now = new Date();
+  const day = now.getDay(); // 0 = Sunday
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - ((day + 6) % 7));
+  monday.setHours(0, 0, 0, 0);
+  const sunday = new Date(monday);
+  sunday.setDate(monday.getDate() + 6);
+  sunday.setHours(23, 59, 59, 999);
+  return { monday, sunday };
+}
+
+function toDateStr(d) {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
-function formatDate(d) {
-  return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
-}
+function todayStr() { return toDateStr(new Date()); }
 
-function isToday(ts) {
+function isThisWeek(ts) {
   if (!ts) return false;
-  return ts.startsWith(todayStr());
+  const { monday, sunday } = getWeekBounds();
+  const d = new Date(ts);
+  return d >= monday && d <= sunday;
 }
 
-// ── Fetch all ledgers ─────────────────────────────────────────────────────────
+function friendlyDay(dateStr) {
+  const today = todayStr();
+  const yesterday = toDateStr(new Date(Date.now() - 86400000));
+  if (dateStr === today)     return { label: "Today",     isToday: true };
+  if (dateStr === yesterday) return { label: "Yesterday", isToday: false };
+  const d = new Date(dateStr + "T12:00:00");
+  return {
+    label: d.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }),
+    isToday: false
+  };
+}
+
+// ── Fetch ─────────────────────────────────────────────────────────────────────
 async function fetchLedger(src) {
   try {
     const res = await fetch(src.url + "?t=" + Date.now());
     if (!res.ok) return [];
     const data = await res.json();
     return Object.values(data)
-      .filter(b => isToday(b.timestamp))
+      .filter(b => isThisWeek(b.timestamp))
       .map(b => ({ ...b, _type: src.type, _label: src.label }));
   } catch (e) {
     console.warn("Could not load", src.url, e);
@@ -483,26 +430,16 @@ async function fetchLedger(src) {
 // ── Card Builder ──────────────────────────────────────────────────────────────
 function buildCard(bet) {
   const status = (bet.status || "pending").toLowerCase();
+  let matchup = "", pickLine = "", resultText = "";
 
-  let matchup = "";
-  let pickLine = "";
-  let resultText = "";
-
-  if (bet._type === "props") {
-    matchup = bet.player || "—";
-    const dir = (bet.pick || "").toUpperCase();
-    pickLine = `<span class="pick-badge ${dir.toLowerCase()}">${dir}</span>
-                <div class="pick-detail">${bet.prop_type} &nbsp;·&nbsp; Line: <strong>${bet.line}</strong><br>${bet.game || ""}</div>`;
-    if (bet.actual_stat != null) resultText = `Actual: ${bet.actual_stat}`;
-  } else if (bet._type === "nba-spreads" || bet._type === "cbb-spreads") {
+  if (bet._type === "nba-spreads" || bet._type === "cbb-spreads") {
     matchup = `${bet.away} <span style="color:var(--muted)">@</span> ${bet.home}`;
     const spread = bet.spread > 0 ? `+${bet.spread}` : bet.spread;
     pickLine = `<span class="pick-badge">${bet.pick_team}</span>
                 <div class="pick-detail">Spread: <strong>${spread}</strong> &nbsp;·&nbsp; Proj margin: ${bet.projected_margin > 0 ? '+' : ''}${bet.projected_margin}</div>`;
     if (bet.final_home_score != null)
-      resultText = `Final: ${bet.away} ${bet.final_away_score}, ${bet.home} ${bet.final_home_score}`;
+      resultText = `${bet.away} ${bet.final_away_score} – ${bet.home} ${bet.final_home_score}`;
   } else {
-    // totals
     matchup = `${bet.away} <span style="color:var(--muted)">@</span> ${bet.home}`;
     const dir = (bet.target || "").toUpperCase();
     pickLine = `<span class="pick-badge ${dir.toLowerCase()}">${dir}</span>
@@ -511,8 +448,6 @@ function buildCard(bet) {
   }
 
   const confClass = { HIGH: "conf-high", MEDIUM: "conf-med", LOW: "conf-low" }[bet.confidence] || "conf-low";
-  const confLabel = bet.confidence || "–";
-
   const edge = parseFloat(bet.edge || 0).toFixed(1);
 
   return `
@@ -524,10 +459,10 @@ function buildCard(bet) {
     <div class="card-body">
       <div class="pick-row">${pickLine}</div>
       <div class="meta-row">
-        <div class="chip edge-chip"><span class="icon">⚡</span> Edge: ${edge}</div>
-        ${bet.confidence ? `<div class="chip ${confClass}"><span class="icon">🎯</span> ${confLabel}</div>` : ""}
-        ${bet.is_live ? `<div class="chip"><span class="icon">🔴</span> Live</div>` : ""}
-        ${bet.over_probability ? `<div class="chip"><span class="icon">%</span> ${(bet.over_probability * 100).toFixed(0)}% prob</div>` : ""}
+        <div class="chip edge-chip">⚡ Edge: ${edge}</div>
+        ${bet.confidence ? `<div class="chip ${confClass}">🎯 ${bet.confidence}</div>` : ""}
+        ${bet.is_live ? `<div class="chip">🔴 Live</div>` : ""}
+        ${bet.over_probability ? `<div class="chip">${(bet.over_probability * 100).toFixed(0)}% prob</div>` : ""}
       </div>
     </div>
     <div class="card-footer">
@@ -537,71 +472,91 @@ function buildCard(bet) {
   </div>`;
 }
 
-function renderEmpty(grid) {
-  grid.innerHTML = `<div class="empty" style="grid-column:1/-1">
-    <div class="icon">📭</div>
-    <p>No picks for this category today.</p>
-  </div>`;
+// ── Render with day grouping ──────────────────────────────────────────────────
+function renderSection(container, bets) {
+  if (bets.length === 0) {
+    container.innerHTML = `<div class="empty"><div class="icon">📭</div><p>No picks this week for this category.</p></div>`;
+    return;
+  }
+
+  // Group by date
+  const groups = {};
+  for (const bet of bets) {
+    const dateStr = (bet.timestamp || "").slice(0, 10);
+    if (!groups[dateStr]) groups[dateStr] = [];
+    groups[dateStr].push(bet);
+  }
+
+  // Most recent day first
+  const sortedDates = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+  const statusOrder = { pending: 0, win: 1, loss: 2, push: 3 };
+
+  let html = "";
+  for (const dateStr of sortedDates) {
+    const dayBets = groups[dateStr].sort((a, b) => (statusOrder[a.status]??0) - (statusOrder[b.status]??0));
+    const { label, isToday } = friendlyDay(dateStr);
+    const wins    = dayBets.filter(b => b.status === "win").length;
+    const losses  = dayBets.filter(b => b.status === "loss").length;
+    const decided = wins + losses;
+    const record  = decided > 0
+      ? `${wins}-${losses} (${Math.round(wins/decided*100)}%)`
+      : `${dayBets.length} pick${dayBets.length !== 1 ? 's' : ''}`;
+
+    html += `
+    <div class="day-group">
+      <div class="day-heading">
+        <span class="day-label ${isToday ? 'today' : ''}">${label}</span>
+        <span class="day-record">${record}</span>
+        <hr />
+      </div>
+      <div class="cards-grid">
+        ${dayBets.map(buildCard).join("")}
+      </div>
+    </div>`;
+  }
+
+  container.innerHTML = html;
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function init() {
-  // Date display
   const now = new Date();
-  document.getElementById("today-date").textContent = formatDate(now);
+  const { monday, sunday } = getWeekBounds();
+  const fmt = d => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  document.getElementById("week-range").textContent  = `${fmt(monday)} – ${fmt(sunday)}`;
+  document.getElementById("last-updated").textContent = `Updated ${now.toLocaleTimeString()}`;
 
-  const results = await Promise.all(SOURCES.map(fetchLedger));
-  const allBets = results.flat();
+  const results  = await Promise.all(SOURCES.map(fetchLedger));
+  const allBets  = results.flat();
 
   document.getElementById("loading").style.display = "none";
 
-  // Stats
   const wins    = allBets.filter(b => b.status === "win").length;
   const losses  = allBets.filter(b => b.status === "loss").length;
   const pending = allBets.filter(b => !["win","loss","push"].includes((b.status||"").toLowerCase())).length;
   const decided = wins + losses;
+  const todayBets = allBets.filter(b => (b.timestamp||"").startsWith(todayStr()));
 
   document.getElementById("stat-total").textContent   = allBets.length;
   document.getElementById("stat-wins").textContent    = wins;
   document.getElementById("stat-losses").textContent  = losses;
   document.getElementById("stat-pending").textContent = pending;
   document.getElementById("stat-pct").textContent     = decided ? `${Math.round(wins/decided*100)}%` : "—";
-  document.getElementById("last-updated").textContent = `Updated ${now.toLocaleTimeString()}`;
+  document.getElementById("stat-today").textContent   = todayBets.length;
 
-  // Render grids
   const typeMap = {
-    all:         allBets,
+    "all":         allBets,
     "nba-spreads": allBets.filter(b => b._type === "nba-spreads"),
     "nba-totals":  allBets.filter(b => b._type === "nba-totals"),
     "cbb-spreads": allBets.filter(b => b._type === "cbb-spreads"),
     "cbb-totals":  allBets.filter(b => b._type === "cbb-totals"),
-    props:         allBets.filter(b => b._type === "props"),
   };
 
   for (const [key, bets] of Object.entries(typeMap)) {
     const count = document.getElementById(`count-${key}`);
     if (count) count.textContent = bets.length;
-
-    const grid = document.getElementById(`grid-${key}`);
-    if (!grid) continue;
-
-    if (bets.length === 0) {
-      renderEmpty(grid);
-    } else {
-      // Sort: pending first, then wins, then losses
-      const order = { pending: 0, win: 1, loss: 2, push: 3 };
-      bets.sort((a, b) => (order[a.status] ?? 0) - (order[b.status] ?? 0));
-      grid.innerHTML = bets.map(buildCard).join("");
-    }
-  }
-
-  // Show overall empty state
-  if (allBets.length === 0) {
-    document.getElementById("grid-all").innerHTML = `
-      <div class="empty" style="grid-column:1/-1">
-        <div class="icon">⏳</div>
-        <p>No picks logged today yet. Check back after the bot runs!</p>
-      </div>`;
+    const container = document.getElementById(`section-${key}`);
+    if (container) renderSection(container, bets);
   }
 }
 
@@ -616,8 +571,6 @@ document.querySelectorAll(".tab").forEach(tab => {
 });
 
 init();
-
-// Auto-refresh every 5 minutes
 setInterval(init, 5 * 60 * 1000);
 </script>
 </body>
