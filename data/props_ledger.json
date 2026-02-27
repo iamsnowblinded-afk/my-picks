@@ -1,0 +1,67 @@
+{
+    "donovan_mitchell_points_26.5_20260219": {
+        "player": "Donovan Mitchell",
+        "prop_type": "Points",
+        "line": 26.5,
+        "pick": "OVER",
+        "edge": 3.0,
+        "game": "Brooklyn Nets @ Cleveland Cavaliers",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-02-19T16:30:01.062596",
+        "result": null,
+        "actual_stat": null
+    },
+    "donovan_mitchell_points_assists_32.5_20260219": {
+        "player": "Donovan Mitchell",
+        "prop_type": "Points Assists",
+        "line": 32.5,
+        "pick": "OVER",
+        "edge": 3.9,
+        "game": "Brooklyn Nets @ Cleveland Cavaliers",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-02-19T16:30:01.085053",
+        "result": null,
+        "actual_stat": null
+    },
+    "onyeka_okongwu_points_14.5_20260220": {
+        "player": "Onyeka Okongwu",
+        "prop_type": "Points",
+        "line": 14.5,
+        "pick": "OVER",
+        "edge": 2.5,
+        "game": "Miami Heat @ Atlanta Hawks",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-02-20T16:11:59.116075",
+        "result": null,
+        "actual_stat": null
+    },
+    "lauri_markkanen_points_17.5_20260223": {
+        "player": "Lauri Markkanen",
+        "prop_type": "Points",
+        "line": 17.5,
+        "pick": "OVER",
+        "edge": 4.5,
+        "game": "Utah Jazz @ Houston Rockets",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-02-23T20:59:57.108947",
+        "result": null,
+        "actual_stat": null
+    },
+    "lauri_markkanen_rebounds_4.5_20260223": {
+        "player": "Lauri Markkanen",
+        "prop_type": "Rebounds",
+        "line": 4.5,
+        "pick": "OVER",
+        "edge": 2.0,
+        "game": "Utah Jazz @ Houston Rockets",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-02-23T20:59:57.131291",
+        "result": null,
+        "actual_stat": null
+    }
+}
