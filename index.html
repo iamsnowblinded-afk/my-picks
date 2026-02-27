@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today's Picks</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #161a24;
+      --surface2:  #1e2333;
+      --border:    #2a3045;
+      --accent:    #4f8ef7;
+      --green:     #22c55e;
+      --red:       #ef4444;
+      --yellow:    #f59e0b;
+      --muted:     #6b7594;
+      --text:      #e2e8f0;
+      --text2:     #94a3b8;
+      --radius:    10px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0f1520 0%, #161e30 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+
+    .logo h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    .logo h1 span { color: var(--accent); }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .date-badge {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 12px;
+      color: var(--text2);
+      font-weight: 500;
+    }
+
+    #last-updated {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── Summary Bar ── */
+    .summary-bar {
+      display: flex;
+      gap: 12px;
+      padding: 16px 24px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .stat-card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 18px;
+      min-width: 110px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .stat-card .label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .stat-card .value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .stat-card .value.green  { color: var(--green); }
+    .stat-card .value.red    { color: var(--red); }
+    .stat-card .value.yellow { color: var(--yellow); }
+
+    /* ── Tabs ── */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      padding: 16px 24px 0;
+      overflow-x: auto;
+    }
+
+    .tab {
+      background: none;
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 16px;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .tab:hover { color: var(--text); background: var(--surface2); }
+
+    .tab.active {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--accent);
+    }
+
+    .tab .count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface2);
+      border-radius: 10px;
+      font-size: 10px;
+      height: 16px;
+      min-width: 16px;
+      padding: 0 4px;
+      margin-left: 6px;
+      color: var(--text2);
+    }
+
+    .tab.active .count { background: var(--accent); color: #fff; }
+
+    /* ── Main Content ── */
+    main {
+      padding: 0 24px 24px;
+    }
+
+    .section {
+      display: none;
+      padding-top: 20px;
+    }
+
+    .section.active { display: block; }
+
+    /* ── Pick Cards ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+
+    .card:hover { border-color: #3a4060; }
+
+    .card.win   { border-left: 3px solid var(--green); }
+    .card.loss  { border-left: 3px solid var(--red); }
+    .card.push  { border-left: 3px solid var(--muted); }
+    .card.pending { border-left: 3px solid var(--accent); }
+
+    .card-header {
+      background: var(--surface2);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .matchup {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .sport-tag {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .sport-tag.nba  { background: #1a3a5c; color: #60a5fa; }
+    .sport-tag.cbb  { background: #1a3a2a; color: #4ade80; }
+    .sport-tag.prop { background: #2d1a5c; color: #c084fc; }
+
+    .card-body { padding: 12px 14px; }
+
+    .pick-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pick-badge {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .pick-badge.over  { color: var(--green); }
+    .pick-badge.under { color: #f97316; }
+
+    .pick-detail {
+      font-size: 12px;
+      color: var(--text2);
+      line-height: 1.4;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 11px;
+      color: var(--text2);
+    }
+
+    .chip .icon { font-size: 10px; }
+    .chip.edge-chip { color: #fbbf24; border-color: #3a3020; background: #1e1a0e; }
+    .chip.conf-high { color: var(--green); border-color: #1a3a20; background: #0e1e0e; }
+    .chip.conf-med  { color: var(--yellow); border-color: #3a2e10; background: #1e1a0a; }
+    .chip.conf-low  { color: var(--muted); }
+
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .status-badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .status-badge.win     { background: #0e2a18; color: var(--green); }
+    .status-badge.loss    { background: #2a0e0e; color: var(--red); }
+    .status-badge.push    { background: #1e1e1e; color: var(--muted); }
+    .status-badge.pending { background: #0e1a38; color: var(--accent); }
+
+    .result-score {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── Empty State ── */
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+
+    .empty .icon { font-size: 40px; margin-bottom: 12px; }
+    .empty p { font-size: 14px; }
+
+    /* ── Loading ── */
+    #loading {
+      text-align: center;
+      padding: 60px;
+      color: var(--muted);
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 28px; height: 28px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin-bottom: 12px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Error ── */
+    .error-banner {
+      background: #2a0e0e;
+      border: 1px solid #5a1a1a;
+      border-radius: var(--radius);
+      color: #fca5a5;
+      font-size: 13px;
+      margin: 20px 0;
+      padding: 14px 16px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header, .summary-bar, .tabs, main { padding-left: 14px; padding-right: 14px; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🎯</div>
+    <h1>Today's <span>Picks</span></h1>
+  </div>
+  <div class="header-meta">
+    <div class="date-badge" id="today-date">—</div>
+    <div id="last-updated">Loading...</div>
+  </div>
+</header>
+
+<div class="summary-bar">
+  <div class="stat-card">
+    <div class="label">Today's Picks</div>
+    <div class="value yellow" id="stat-total">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Won</div>
+    <div class="value green" id="stat-wins">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Lost</div>
+    <div class="value red" id="stat-losses">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Pending</div>
+    <div class="value" id="stat-pending">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Win %</div>
+    <div class="value green" id="stat-pct">—</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" data-section="all">All Picks <span class="count" id="count-all">0</span></button>
+  <button class="tab" data-section="nba-spreads">NBA Spreads <span class="count" id="count-nba-spreads">0</span></button>
+  <button class="tab" data-section="nba-totals">NBA Totals <span class="count" id="count-nba-totals">0</span></button>
+  <button class="tab" data-section="cbb-spreads">CBB Spreads <span class="count" id="count-cbb-spreads">0</span></button>
+  <button class="tab" data-section="cbb-totals">CBB Totals <span class="count" id="count-cbb-totals">0</span></button>
+  <button class="tab" data-section="props">Props <span class="count" id="count-props">0</span></button>
+</div>
+
+<main>
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Loading today's picks...</p>
+  </div>
+
+  <div id="error-container"></div>
+
+  <div class="section active" id="section-all">
+    <div class="cards-grid" id="grid-all"></div>
+  </div>
+  <div class="section" id="section-nba-spreads">
+    <div class="cards-grid" id="grid-nba-spreads"></div>
+  </div>
+  <div class="section" id="section-nba-totals">
+    <div class="cards-grid" id="grid-nba-totals"></div>
+  </div>
+  <div class="section" id="section-cbb-spreads">
+    <div class="cards-grid" id="grid-cbb-spreads"></div>
+  </div>
+  <div class="section" id="section-cbb-totals">
+    <div class="cards-grid" id="grid-cbb-totals"></div>
+  </div>
+  <div class="section" id="section-props">
+    <div class="cards-grid" id="grid-props"></div>
+  </div>
+</main>
+
+<script>
+// ── CONFIG — update these two lines ─────────────────────────────────────────
+const GITHUB_USER = "iamsnowblinded-afk";   // e.g. "johndoe"
+const GITHUB_REPO = "my-picks";         // e.g. "my-picks"
+// ─────────────────────────────────────────────────────────────────────────────
+
+const BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data`;
+
+const SOURCES = [
+  { url: `${BASE}/spreads_ledger.json`,     type: "nba-spreads", label: "NBA" },
+  { url: `${BASE}/totals_ledger.json`,      type: "nba-totals",  label: "NBA" },
+  { url: `${BASE}/cbb_spreads_ledger.json`, type: "cbb-spreads", label: "CBB" },
+  { url: `${BASE}/cbb_totals_ledger.json`,  type: "cbb-totals",  label: "CBB" },
+  { url: `${BASE}/props_ledger.json`,       type: "props",       label: "PROP" },
+];
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function todayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function formatDate(d) {
+  return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+}
+
+function isToday(ts) {
+  if (!ts) return false;
+  return ts.startsWith(todayStr());
+}
+
+// ── Fetch all ledgers ─────────────────────────────────────────────────────────
+async function fetchLedger(src) {
+  try {
+    const res = await fetch(src.url + "?t=" + Date.now());
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Object.values(data)
+      .filter(b => isToday(b.timestamp))
+      .map(b => ({ ...b, _type: src.type, _label: src.label }));
+  } catch (e) {
+    console.warn("Could not load", src.url, e);
+    return [];
+  }
+}
+
+// ── Card Builder ──────────────────────────────────────────────────────────────
+function buildCard(bet) {
+  const status = (bet.status || "pending").toLowerCase();
+
+  let matchup = "";
+  let pickLine = "";
+  let resultText = "";
+
+  if (bet._type === "props") {
+    matchup = bet.player || "—";
+    const dir = (bet.pick || "").toUpperCase();
+    pickLine = `<span class="pick-badge ${dir.toLowerCase()}">${dir}</span>
+                <div class="pick-detail">${bet.prop_type} &nbsp;·&nbsp; Line: <strong>${bet.line}</strong><br>${bet.game || ""}</div>`;
+    if (bet.actual_stat != null) resultText = `Actual: ${bet.actual_stat}`;
+  } else if (bet._type === "nba-spreads" || bet._type === "cbb-spreads") {
+    matchup = `${bet.away} <span style="color:var(--muted)">@</span> ${bet.home}`;
+    const spread = bet.spread > 0 ? `+${bet.spread}` : bet.spread;
+    pickLine = `<span class="pick-badge">${bet.pick_team}</span>
+                <div class="pick-detail">Spread: <strong>${spread}</strong> &nbsp;·&nbsp; Proj margin: ${bet.projected_margin > 0 ? '+' : ''}${bet.projected_margin}</div>`;
+    if (bet.final_home_score != null)
+      resultText = `Final: ${bet.away} ${bet.final_away_score}, ${bet.home} ${bet.final_home_score}`;
+  } else {
+    // totals
+    matchup = `${bet.away} <span style="color:var(--muted)">@</span> ${bet.home}`;
+    const dir = (bet.target || "").toUpperCase();
+    pickLine = `<span class="pick-badge ${dir.toLowerCase()}">${dir}</span>
+                <div class="pick-detail">Total: <strong>${bet.line}</strong> &nbsp;·&nbsp; Proj: ${bet.projection}</div>`;
+    if (bet.final_total != null) resultText = `Final total: ${bet.final_total}`;
+  }
+
+  const confClass = { HIGH: "conf-high", MEDIUM: "conf-med", LOW: "conf-low" }[bet.confidence] || "conf-low";
+  const confLabel = bet.confidence || "–";
+
+  const edge = parseFloat(bet.edge || 0).toFixed(1);
+
+  return `
+  <div class="card ${status}">
+    <div class="card-header">
+      <div class="matchup">${matchup}</div>
+      <span class="sport-tag ${bet._label.toLowerCase()}">${bet._label}</span>
+    </div>
+    <div class="card-body">
+      <div class="pick-row">${pickLine}</div>
+      <div class="meta-row">
+        <div class="chip edge-chip"><span class="icon">⚡</span> Edge: ${edge}</div>
+        ${bet.confidence ? `<div class="chip ${confClass}"><span class="icon">🎯</span> ${confLabel}</div>` : ""}
+        ${bet.is_live ? `<div class="chip"><span class="icon">🔴</span> Live</div>` : ""}
+        ${bet.over_probability ? `<div class="chip"><span class="icon">%</span> ${(bet.over_probability * 100).toFixed(0)}% prob</div>` : ""}
+      </div>
+    </div>
+    <div class="card-footer">
+      <span class="status-badge ${status}">${status}</span>
+      <span class="result-score">${resultText}</span>
+    </div>
+  </div>`;
+}
+
+function renderEmpty(grid) {
+  grid.innerHTML = `<div class="empty" style="grid-column:1/-1">
+    <div class="icon">📭</div>
+    <p>No picks for this category today.</p>
+  </div>`;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+async function init() {
+  // Date display
+  const now = new Date();
+  document.getElementById("today-date").textContent = formatDate(now);
+
+  const results = await Promise.all(SOURCES.map(fetchLedger));
+  const allBets = results.flat();
+
+  document.getElementById("loading").style.display = "none";
+
+  // Stats
+  const wins    = allBets.filter(b => b.status === "win").length;
+  const losses  = allBets.filter(b => b.status === "loss").length;
+  const pending = allBets.filter(b => !["win","loss","push"].includes((b.status||"").toLowerCase())).length;
+  const decided = wins + losses;
+
+  document.getElementById("stat-total").textContent   = allBets.length;
+  document.getElementById("stat-wins").textContent    = wins;
+  document.getElementById("stat-losses").textContent  = losses;
+  document.getElementById("stat-pending").textContent = pending;
+  document.getElementById("stat-pct").textContent     = decided ? `${Math.round(wins/decided*100)}%` : "—";
+  document.getElementById("last-updated").textContent = `Updated ${now.toLocaleTimeString()}`;
+
+  // Render grids
+  const typeMap = {
+    all:         allBets,
+    "nba-spreads": allBets.filter(b => b._type === "nba-spreads"),
+    "nba-totals":  allBets.filter(b => b._type === "nba-totals"),
+    "cbb-spreads": allBets.filter(b => b._type === "cbb-spreads"),
+    "cbb-totals":  allBets.filter(b => b._type === "cbb-totals"),
+    props:         allBets.filter(b => b._type === "props"),
+  };
+
+  for (const [key, bets] of Object.entries(typeMap)) {
+    const count = document.getElementById(`count-${key}`);
+    if (count) count.textContent = bets.length;
+
+    const grid = document.getElementById(`grid-${key}`);
+    if (!grid) continue;
+
+    if (bets.length === 0) {
+      renderEmpty(grid);
+    } else {
+      // Sort: pending first, then wins, then losses
+      const order = { pending: 0, win: 1, loss: 2, push: 3 };
+      bets.sort((a, b) => (order[a.status] ?? 0) - (order[b.status] ?? 0));
+      grid.innerHTML = bets.map(buildCard).join("");
+    }
+  }
+
+  // Show overall empty state
+  if (allBets.length === 0) {
+    document.getElementById("grid-all").innerHTML = `
+      <div class="empty" style="grid-column:1/-1">
+        <div class="icon">⏳</div>
+        <p>No picks logged today yet. Check back after the bot runs!</p>
+      </div>`;
+  }
+}
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+    tab.classList.add("active");
+    document.getElementById(`section-${tab.dataset.section}`).classList.add("active");
+  });
+});
+
+init();
+
+// Auto-refresh every 5 minutes
+setInterval(init, 5 * 60 * 1000);
+</script>
+</body>
+</html>
