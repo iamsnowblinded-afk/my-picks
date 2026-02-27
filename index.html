@@ -613,6 +613,36 @@ function renderSection(container, bets) {
   container.innerHTML = html;
 }
 
+// ── Update Win % based on active tab + filter ────────────────────────────────
+function updateWinPct() {
+  const typeMap = {
+    "all":         getAllBets(),
+    "nba-spreads": allBetsCache["nba-spreads"] || [],
+    "nba-totals":  allBetsCache["nba-totals"]  || [],
+    "cbb-spreads": allBetsCache["cbb-spreads"] || [],
+    "cbb-totals":  allBetsCache["cbb-totals"]  || [],
+  };
+
+  const bets    = applyFilter(typeMap[activeSection] || getAllBets());
+  const wins    = bets.filter(b => b.status === "win").length;
+  const losses  = bets.filter(b => b.status === "loss").length;
+  const decided = wins + losses;
+
+  document.getElementById("stat-pct").textContent = decided ? `${Math.round(wins / decided * 100)}%` : "—";
+
+  const sectionLabel = {
+    "all":         "Week",
+    "nba-spreads": "NBA Spreads",
+    "nba-totals":  "NBA Totals",
+    "cbb-spreads": "CBB Spreads",
+    "cbb-totals":  "CBB Totals",
+  }[activeSection] || "Week";
+
+  const filterSuffix = activeFilter !== "all" ? ` · ${activeFilter}` : "";
+  document.querySelector("#stat-pct").closest(".stat-card").querySelector(".label").textContent =
+    `${sectionLabel}${filterSuffix} W%`;
+}
+
 // ── Re-render all visible sections with current filter ────────────────────────
 function applyFilterToAll() {
   updateFilterUI();
@@ -628,6 +658,7 @@ function applyFilterToAll() {
     const container = document.getElementById(`section-${key}`);
     if (container) renderSection(container, bets);
   }
+  updateWinPct();
 }
 
 function getAllBets() {
@@ -683,6 +714,7 @@ async function init() {
   }
 
   updateFilterUI();
+  updateWinPct();
 }
 
 // ── Stat card filter clicks ───────────────────────────────────────────────────
@@ -708,6 +740,7 @@ document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.add("active");
     activeSection = tab.dataset.section;
     document.getElementById(`section-${activeSection}`).classList.add("active");
+    updateWinPct();
   });
 });
 
