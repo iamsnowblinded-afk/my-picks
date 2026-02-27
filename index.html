@@ -88,7 +88,28 @@
       min-width: 110px;
       text-align: center;
       flex-shrink: 0;
+      transition: border-color 0.15s, transform 0.1s;
     }
+
+    /* Clickable stat cards */
+    .stat-card[data-filter] {
+      cursor: pointer;
+    }
+
+    .stat-card[data-filter]:hover {
+      border-color: #4a5580;
+      transform: translateY(-2px);
+    }
+
+    .stat-card[data-filter].active-filter {
+      background: #111827;
+    }
+
+    .stat-card[data-filter="all"].active-filter        { border-color: var(--yellow); }
+    .stat-card[data-filter="win"].active-filter        { border-color: var(--green); }
+    .stat-card[data-filter="loss"].active-filter       { border-color: var(--red); }
+    .stat-card[data-filter="pending"].active-filter    { border-color: var(--accent); }
+    .stat-card[data-filter="today"].active-filter      { border-color: var(--text2); }
 
     .stat-card .label {
       font-size: 10px;
@@ -103,6 +124,33 @@
     .stat-card .value.red    { color: var(--red); }
     .stat-card .value.yellow { color: var(--yellow); }
     .stat-card .value.blue   { color: var(--accent); }
+
+    /* ── Active filter banner ── */
+    .filter-banner {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 24px;
+      background: #0f1421;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text2);
+    }
+
+    .filter-banner.visible { display: flex; }
+
+    .filter-banner .clear-btn {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      color: var(--text2);
+      cursor: pointer;
+      font-size: 11px;
+      padding: 3px 10px;
+      transition: all 0.15s;
+    }
+
+    .filter-banner .clear-btn:hover { border-color: var(--accent); color: var(--accent); }
 
     /* ── Tabs ── */
     .tabs {
@@ -295,6 +343,7 @@
     @media (max-width: 600px) {
       header, .summary-bar, .tabs, main { padding-left: 14px; padding-right: 14px; }
       .cards-grid { grid-template-columns: 1fr; }
+      .filter-banner { padding-left: 14px; padding-right: 14px; }
     }
   </style>
 </head>
@@ -312,19 +361,19 @@
 </header>
 
 <div class="summary-bar">
-  <div class="stat-card">
+  <div class="stat-card active-filter" data-filter="all">
     <div class="label">Week Picks</div>
     <div class="value yellow" id="stat-total">—</div>
   </div>
-  <div class="stat-card">
+  <div class="stat-card" data-filter="win">
     <div class="label">Won</div>
     <div class="value green" id="stat-wins">—</div>
   </div>
-  <div class="stat-card">
+  <div class="stat-card" data-filter="loss">
     <div class="label">Lost</div>
     <div class="value red" id="stat-losses">—</div>
   </div>
-  <div class="stat-card">
+  <div class="stat-card" data-filter="pending">
     <div class="label">Pending</div>
     <div class="value blue" id="stat-pending">—</div>
   </div>
@@ -332,10 +381,16 @@
     <div class="label">Win %</div>
     <div class="value green" id="stat-pct">—</div>
   </div>
-  <div class="stat-card">
+  <div class="stat-card" data-filter="today">
     <div class="label">Today</div>
     <div class="value" id="stat-today">—</div>
   </div>
+</div>
+
+<!-- Filter active banner -->
+<div class="filter-banner" id="filter-banner">
+  <span id="filter-label">Showing all picks</span>
+  <button class="clear-btn" id="clear-filter">✕ Clear filter</button>
 </div>
 
 <div class="tabs">
@@ -374,10 +429,15 @@ const SOURCES = [
   { url: `${BASE}/cbb_totals_ledger.json`,  type: "cbb-totals",  label: "CBB" },
 ];
 
+// ── State ─────────────────────────────────────────────────────────────────────
+let allBetsCache  = {};   // keyed by type
+let activeFilter  = "all"; // "all" | "win" | "loss" | "pending" | "today"
+let activeSection = "all";
+
 // ── Date Helpers ──────────────────────────────────────────────────────────────
 function getWeekBounds() {
   const now = new Date();
-  const day = now.getDay(); // 0 = Sunday
+  const day = now.getDay();
   const monday = new Date(now);
   monday.setDate(now.getDate() - ((day + 6) % 7));
   monday.setHours(0, 0, 0, 0);
@@ -410,6 +470,38 @@ function friendlyDay(dateStr) {
     label: d.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" }),
     isToday: false
   };
+}
+
+// ── Filter Logic ──────────────────────────────────────────────────────────────
+function applyFilter(bets) {
+  if (activeFilter === "all")     return bets;
+  if (activeFilter === "today")   return bets.filter(b => (b.timestamp||"").startsWith(todayStr()));
+  if (activeFilter === "pending") return bets.filter(b => !["win","loss","push"].includes((b.status||"").toLowerCase()));
+  return bets.filter(b => (b.status||"").toLowerCase() === activeFilter);
+}
+
+const FILTER_LABELS = {
+  all:     "Showing all picks",
+  win:     "Showing wins only",
+  loss:    "Showing losses only",
+  pending: "Showing pending picks",
+  today:   "Showing today's picks only",
+};
+
+function updateFilterUI() {
+  const banner = document.getElementById("filter-banner");
+  document.getElementById("filter-label").textContent = FILTER_LABELS[activeFilter] || "";
+
+  if (activeFilter === "all") {
+    banner.classList.remove("visible");
+  } else {
+    banner.classList.add("visible");
+  }
+
+  // Highlight active stat card
+  document.querySelectorAll(".stat-card[data-filter]").forEach(card => {
+    card.classList.toggle("active-filter", card.dataset.filter === activeFilter);
+  });
 }
 
 // ── Fetch ─────────────────────────────────────────────────────────────────────
@@ -474,20 +566,23 @@ function buildCard(bet) {
 
 // ── Render with day grouping ──────────────────────────────────────────────────
 function renderSection(container, bets) {
-  if (bets.length === 0) {
-    container.innerHTML = `<div class="empty"><div class="icon">📭</div><p>No picks this week for this category.</p></div>`;
+  const filtered = applyFilter(bets);
+
+  if (filtered.length === 0) {
+    const msg = activeFilter === "all"
+      ? "No picks this week for this category."
+      : `No ${activeFilter === "today" ? "today's" : activeFilter} picks for this category.`;
+    container.innerHTML = `<div class="empty"><div class="icon">📭</div><p>${msg}</p></div>`;
     return;
   }
 
-  // Group by date
   const groups = {};
-  for (const bet of bets) {
+  for (const bet of filtered) {
     const dateStr = (bet.timestamp || "").slice(0, 10);
     if (!groups[dateStr]) groups[dateStr] = [];
     groups[dateStr].push(bet);
   }
 
-  // Most recent day first
   const sortedDates = Object.keys(groups).sort((a, b) => b.localeCompare(a));
   const statusOrder = { pending: 0, win: 1, loss: 2, push: 3 };
 
@@ -518,19 +613,46 @@ function renderSection(container, bets) {
   container.innerHTML = html;
 }
 
+// ── Re-render all visible sections with current filter ────────────────────────
+function applyFilterToAll() {
+  updateFilterUI();
+  const typeMap = {
+    "all":         getAllBets(),
+    "nba-spreads": allBetsCache["nba-spreads"] || [],
+    "nba-totals":  allBetsCache["nba-totals"]  || [],
+    "cbb-spreads": allBetsCache["cbb-spreads"] || [],
+    "cbb-totals":  allBetsCache["cbb-totals"]  || [],
+  };
+
+  for (const [key, bets] of Object.entries(typeMap)) {
+    const container = document.getElementById(`section-${key}`);
+    if (container) renderSection(container, bets);
+  }
+}
+
+function getAllBets() {
+  return Object.values(allBetsCache).flat();
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function init() {
   const now = new Date();
   const { monday, sunday } = getWeekBounds();
   const fmt = d => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  document.getElementById("week-range").textContent  = `${fmt(monday)} – ${fmt(sunday)}`;
+  document.getElementById("week-range").textContent   = `${fmt(monday)} – ${fmt(sunday)}`;
   document.getElementById("last-updated").textContent = `Updated ${now.toLocaleTimeString()}`;
 
-  const results  = await Promise.all(SOURCES.map(fetchLedger));
-  const allBets  = results.flat();
+  const results = await Promise.all(SOURCES.map(fetchLedger));
+
+  // Store by type
+  allBetsCache = {};
+  for (let i = 0; i < SOURCES.length; i++) {
+    allBetsCache[SOURCES[i].type] = results[i];
+  }
 
   document.getElementById("loading").style.display = "none";
 
+  const allBets = getAllBets();
   const wins    = allBets.filter(b => b.status === "win").length;
   const losses  = allBets.filter(b => b.status === "loss").length;
   const pending = allBets.filter(b => !["win","loss","push"].includes((b.status||"").toLowerCase())).length;
@@ -544,12 +666,13 @@ async function init() {
   document.getElementById("stat-pct").textContent     = decided ? `${Math.round(wins/decided*100)}%` : "—";
   document.getElementById("stat-today").textContent   = todayBets.length;
 
+  // Update tab counts (unfiltered)
   const typeMap = {
     "all":         allBets,
-    "nba-spreads": allBets.filter(b => b._type === "nba-spreads"),
-    "nba-totals":  allBets.filter(b => b._type === "nba-totals"),
-    "cbb-spreads": allBets.filter(b => b._type === "cbb-spreads"),
-    "cbb-totals":  allBets.filter(b => b._type === "cbb-totals"),
+    "nba-spreads": allBetsCache["nba-spreads"] || [],
+    "nba-totals":  allBetsCache["nba-totals"]  || [],
+    "cbb-spreads": allBetsCache["cbb-spreads"] || [],
+    "cbb-totals":  allBetsCache["cbb-totals"]  || [],
   };
 
   for (const [key, bets] of Object.entries(typeMap)) {
@@ -558,7 +681,24 @@ async function init() {
     const container = document.getElementById(`section-${key}`);
     if (container) renderSection(container, bets);
   }
+
+  updateFilterUI();
 }
+
+// ── Stat card filter clicks ───────────────────────────────────────────────────
+document.querySelectorAll(".stat-card[data-filter]").forEach(card => {
+  card.addEventListener("click", () => {
+    const f = card.dataset.filter;
+    // Toggle off if already active
+    activeFilter = (activeFilter === f) ? "all" : f;
+    applyFilterToAll();
+  });
+});
+
+document.getElementById("clear-filter").addEventListener("click", () => {
+  activeFilter = "all";
+  applyFilterToAll();
+});
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
 document.querySelectorAll(".tab").forEach(tab => {
@@ -566,7 +706,8 @@ document.querySelectorAll(".tab").forEach(tab => {
     document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
     document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
     tab.classList.add("active");
-    document.getElementById(`section-${tab.dataset.section}`).classList.add("active");
+    activeSection = tab.dataset.section;
+    document.getElementById(`section-${activeSection}`).classList.add("active");
   });
 });
 
