@@ -500,5 +500,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "36b7acd903108abf04b18bf6449f45b3_2026-03-01_pregame_spread": {
+    "id": "36b7acd903108abf04b18bf6449f45b3",
+    "away": "Portland Trail Blazers",
+    "home": "Atlanta Hawks",
+    "pick_team": "Portland Trail Blazers",
+    "spread": 6.0,
+    "projected_margin": 2.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772396401,
+    "timestamp": "2026-03-01T15:20:06.407692",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
