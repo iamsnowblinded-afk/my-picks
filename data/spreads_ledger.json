@@ -485,5 +485,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "ab2357087428a9fee8c8a747eed1fced_2026-03-01_pregame_spread": {
+    "id": "ab2357087428a9fee8c8a747eed1fced",
+    "away": "Cleveland Cavaliers",
+    "home": "Brooklyn Nets",
+    "pick_team": "Brooklyn Nets",
+    "spread": 12.5,
+    "projected_margin": -5.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772396372,
+    "timestamp": "2026-03-01T15:19:39.686720",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
