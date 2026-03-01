@@ -515,5 +515,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "4d40482f62b199752b8b264572ff8460_2026-03-01_pregame_spread": {
+    "id": "4d40482f62b199752b8b264572ff8460",
+    "away": "Detroit Pistons",
+    "home": "Orlando Magic",
+    "pick_team": "Orlando Magic",
+    "spread": 5.0,
+    "projected_margin": 3.0,
+    "edge": 8.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772396413,
+    "timestamp": "2026-03-01T15:20:18.172604",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
