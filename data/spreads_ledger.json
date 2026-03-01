@@ -545,5 +545,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "517d3f658ed7692ebe7eaea81aa3c1ef_2026-03-01_pregame_spread": {
+    "id": "517d3f658ed7692ebe7eaea81aa3c1ef",
+    "away": "Sacramento Kings",
+    "home": "Los Angeles Lakers",
+    "pick_team": "Los Angeles Lakers",
+    "spread": -13.0,
+    "projected_margin": 16.0,
+    "edge": 3.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772396433,
+    "timestamp": "2026-03-01T15:20:38.273681",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
