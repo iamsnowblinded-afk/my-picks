@@ -600,5 +600,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "fe9fbae6e69b1684995b2fa8f45fb691_2026-03-03_pregame_spread": {
+    "id": "fe9fbae6e69b1684995b2fa8f45fb691",
+    "away": "San Antonio Spurs",
+    "home": "Philadelphia 76ers",
+    "pick_team": "San Antonio Spurs",
+    "spread": -6.5,
+    "projected_margin": -3.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481275,
+    "timestamp": "2026-03-02T14:54:41.587287",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
