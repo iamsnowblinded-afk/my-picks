@@ -357,5 +357,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "3a1ef5b1bd5afc1ee417ba3992167357_2026-03-02_pregame": {
+    "id": "3a1ef5b1bd5afc1ee417ba3992167357",
+    "away": "Boston Celtics",
+    "home": "Milwaukee Bucks",
+    "target": "UNDER",
+    "line": 215.5,
+    "projection": 210.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481388,
+    "timestamp": "2026-03-02T14:56:33.491731",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
