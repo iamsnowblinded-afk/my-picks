@@ -417,5 +417,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "fe9fbae6e69b1684995b2fa8f45fb691_2026-03-03_pregame": {
+    "id": "fe9fbae6e69b1684995b2fa8f45fb691",
+    "away": "San Antonio Spurs",
+    "home": "Philadelphia 76ers",
+    "target": "OVER",
+    "line": 231.5,
+    "projection": 235.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481420,
+    "timestamp": "2026-03-02T14:57:05.964890",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
