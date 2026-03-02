@@ -372,5 +372,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1804ec1ea561b137f3b6a151af196bef_2026-03-02_pregame": {
+    "id": "1804ec1ea561b137f3b6a151af196bef",
+    "away": "Denver Nuggets",
+    "home": "Utah Jazz",
+    "target": "OVER",
+    "line": 242.5,
+    "projection": 246.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481395,
+    "timestamp": "2026-03-02T14:56:41.252794",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
