@@ -342,5 +342,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "23f7e8ebef76ec1b639f412eccfdfda4_2026-03-02_pregame": {
+    "id": "23f7e8ebef76ec1b639f412eccfdfda4",
+    "away": "Houston Rockets",
+    "home": "Washington Wizards",
+    "target": "OVER",
+    "line": 225.5,
+    "projection": 229.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481381,
+    "timestamp": "2026-03-02T14:56:26.327299",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
