@@ -387,5 +387,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "48deab86651d256447d6bb35a3d9939c_2026-03-02_pregame": {
+    "id": "48deab86651d256447d6bb35a3d9939c",
+    "away": "Los Angeles Clippers",
+    "home": "Golden State Warriors",
+    "target": "UNDER",
+    "line": 215.5,
+    "projection": 208.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481403,
+    "timestamp": "2026-03-02T14:56:49.439787",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
