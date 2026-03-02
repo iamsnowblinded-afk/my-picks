@@ -570,5 +570,20 @@
     "tweeted": false,
     "final_home_score": 128,
     "final_away_score": 104
+  },
+  "3a1ef5b1bd5afc1ee417ba3992167357_2026-03-02_pregame_spread": {
+    "id": "3a1ef5b1bd5afc1ee417ba3992167357",
+    "away": "Boston Celtics",
+    "home": "Milwaukee Bucks",
+    "pick_team": "Milwaukee Bucks",
+    "spread": 2.0,
+    "projected_margin": 3.0,
+    "edge": 5.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481245,
+    "timestamp": "2026-03-02T14:54:11.096300",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
