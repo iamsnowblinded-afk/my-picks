@@ -548,9 +548,11 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1772396426,
     "timestamp": "2026-03-01T15:20:31.542523",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_home_score": 137,
+    "final_away_score": 117
   },
   "517d3f658ed7692ebe7eaea81aa3c1ef_2026-03-01_pregame_spread": {
     "id": "517d3f658ed7692ebe7eaea81aa3c1ef",
