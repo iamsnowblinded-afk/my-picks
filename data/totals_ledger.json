@@ -402,5 +402,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6e039621e88bb0b022d5b0d3eafd9596_2026-03-03_pregame": {
+    "id": "6e039621e88bb0b022d5b0d3eafd9596",
+    "away": "New York Knicks",
+    "home": "Toronto Raptors",
+    "target": "UNDER",
+    "line": 224.5,
+    "projection": 220.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772481411,
+    "timestamp": "2026-03-02T14:56:58.420333",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
