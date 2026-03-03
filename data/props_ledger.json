@@ -76,5 +76,18 @@
         "timestamp": "2026-03-03T13:10:11.320925",
         "result": null,
         "actual_stat": null
+    },
+    "devin_vassell_points_rebounds_assists_20.5_20260303": {
+        "player": "Devin Vassell",
+        "prop_type": "Points Rebounds Assists",
+        "line": 20.5,
+        "pick": "UNDER",
+        "edge": 3.0,
+        "game": "San Antonio Spurs @ Philadelphia 76ers",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-03-03T13:10:12.793048",
+        "result": null,
+        "actual_stat": null
     }
 }
