@@ -466,5 +466,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "7a292e434c91c398eb8db7bf1008b671_2026-03-03_pregame": {
+    "id": "7a292e434c91c398eb8db7bf1008b671",
+    "away": "Washington Wizards",
+    "home": "Orlando Magic",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 223.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772563810,
+    "timestamp": "2026-03-03T13:50:15.528351",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
