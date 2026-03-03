@@ -526,5 +526,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1da265a6a1035935a4d2f806af7c3a74_2026-03-03_pregame": {
+    "id": "1da265a6a1035935a4d2f806af7c3a74",
+    "away": "Phoenix Suns",
+    "home": "Sacramento Kings",
+    "target": "OVER",
+    "line": 222.5,
+    "projection": 226.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772563941,
+    "timestamp": "2026-03-03T13:52:25.869039",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
