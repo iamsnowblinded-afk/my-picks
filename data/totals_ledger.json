@@ -451,5 +451,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "b6df29b0fdf2fd3b00b97b1e81870cca_2026-03-03_pregame": {
+    "id": "b6df29b0fdf2fd3b00b97b1e81870cca",
+    "away": "Detroit Pistons",
+    "home": "Cleveland Cavaliers",
+    "target": "UNDER",
+    "line": 228.5,
+    "projection": 222.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772563794,
+    "timestamp": "2026-03-03T13:49:59.536836",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
