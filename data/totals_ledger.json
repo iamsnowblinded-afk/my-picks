@@ -436,5 +436,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "2213458a287cb0b1ffa4d46d3ed430b3_2026-03-03_pregame": {
+    "id": "2213458a287cb0b1ffa4d46d3ed430b3",
+    "away": "Dallas Mavericks",
+    "home": "Charlotte Hornets",
+    "target": "OVER",
+    "line": 228.5,
+    "projection": 233.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772563781,
+    "timestamp": "2026-03-03T13:49:47.907631",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
