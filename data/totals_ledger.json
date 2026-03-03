@@ -541,5 +541,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "5e27bbc527b9df8725ac9fcf03174b8c_2026-03-04_pregame": {
+    "id": "5e27bbc527b9df8725ac9fcf03174b8c",
+    "away": "Oklahoma City Thunder",
+    "home": "New York Knicks",
+    "target": "UNDER",
+    "line": 221.5,
+    "projection": 217.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772563949,
+    "timestamp": "2026-03-03T13:52:34.700693",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
