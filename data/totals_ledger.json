@@ -496,5 +496,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6178a340912ea77ebb5169a9c65f3ec7_2026-03-03_pregame": {
+    "id": "6178a340912ea77ebb5169a9c65f3ec7",
+    "away": "Oklahoma City Thunder",
+    "home": "Chicago Bulls",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 219.0,
+    "edge": 8.5,
+    "confidence": "HIGH",
+    "pick_time_unix": 1772563881,
+    "timestamp": "2026-03-03T13:51:25.857591",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
