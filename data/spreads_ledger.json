@@ -619,5 +619,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "2213458a287cb0b1ffa4d46d3ed430b3_2026-03-03_pregame_spread": {
+    "id": "2213458a287cb0b1ffa4d46d3ed430b3",
+    "away": "Dallas Mavericks",
+    "home": "Charlotte Hornets",
+    "pick_team": "Charlotte Hornets",
+    "spread": -13.0,
+    "projected_margin": 16.0,
+    "edge": 3.0,
+    "confidence": "HIGH",
+    "pick_time_unix": 1772565074,
+    "timestamp": "2026-03-03T14:11:18.893028",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
