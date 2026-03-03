@@ -649,5 +649,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "637bb875ffdc47533ca3ed42d7bbcaa7_2026-03-03_pregame_spread": {
+    "id": "637bb875ffdc47533ca3ed42d7bbcaa7",
+    "away": "Brooklyn Nets",
+    "home": "Miami Heat",
+    "pick_team": "Brooklyn Nets",
+    "spread": 13.0,
+    "projected_margin": 8.0,
+    "edge": 5.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772565103,
+    "timestamp": "2026-03-03T14:11:50.338512",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
