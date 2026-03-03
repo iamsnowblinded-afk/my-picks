@@ -63,5 +63,18 @@
         "timestamp": "2026-02-23T20:59:57.131291",
         "result": null,
         "actual_stat": null
+    },
+    "devin_vassell_points_16.5_20260303": {
+        "player": "Devin Vassell",
+        "prop_type": "Points",
+        "line": 16.5,
+        "pick": "UNDER",
+        "edge": 3.0,
+        "game": "San Antonio Spurs @ Philadelphia 76ers",
+        "sport": "NBA",
+        "status": "pending",
+        "timestamp": "2026-03-03T13:10:11.320925",
+        "result": null,
+        "actual_stat": null
     }
 }
