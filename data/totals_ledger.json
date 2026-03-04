@@ -448,9 +448,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1772563781,
     "timestamp": "2026-03-03T13:49:47.907631",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 207
   },
   "b6df29b0fdf2fd3b00b97b1e81870cca_2026-03-03_pregame": {
     "id": "b6df29b0fdf2fd3b00b97b1e81870cca",
@@ -463,9 +464,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1772563794,
     "timestamp": "2026-03-03T13:49:59.536836",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 222
   },
   "7a292e434c91c398eb8db7bf1008b671_2026-03-03_pregame": {
     "id": "7a292e434c91c398eb8db7bf1008b671",
@@ -478,9 +480,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1772563810,
     "timestamp": "2026-03-03T13:50:15.528351",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 235
   },
   "637bb875ffdc47533ca3ed42d7bbcaa7_2026-03-03_pregame": {
     "id": "637bb875ffdc47533ca3ed42d7bbcaa7",
