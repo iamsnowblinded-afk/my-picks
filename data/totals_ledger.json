@@ -565,5 +565,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "205af1eb3893119c935c720bddf95254_2026-03-04_pregame": {
+    "id": "205af1eb3893119c935c720bddf95254",
+    "away": "Charlotte Hornets",
+    "home": "Boston Celtics",
+    "target": "UNDER",
+    "line": 212.5,
+    "projection": 208.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772634174,
+    "timestamp": "2026-03-04T09:22:59.348284",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
