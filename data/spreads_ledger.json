@@ -706,5 +706,20 @@
     "tweeted": false,
     "final_home_score": 103,
     "final_away_score": 114
+  },
+  "5e27bbc527b9df8725ac9fcf03174b8c_2026-03-04_pregame_spread": {
+    "id": "5e27bbc527b9df8725ac9fcf03174b8c",
+    "away": "Oklahoma City Thunder",
+    "home": "New York Knicks",
+    "pick_team": "New York Knicks",
+    "spread": 4.5,
+    "projected_margin": 2.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772634111,
+    "timestamp": "2026-03-04T09:21:56.871825",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
