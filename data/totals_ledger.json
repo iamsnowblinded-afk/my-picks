@@ -644,5 +644,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "405300ced4b3e611f8d6cc145e5cc9da_2026-03-05_pregame": {
+    "id": "405300ced4b3e611f8d6cc145e5cc9da",
+    "away": "Detroit Pistons",
+    "home": "San Antonio Spurs",
+    "target": "UNDER",
+    "line": 228.5,
+    "projection": 224.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724426,
+    "timestamp": "2026-03-05T10:27:12.113774",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
