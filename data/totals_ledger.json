@@ -659,5 +659,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "0aac7c0b9b7350238d921ab4c6faf26d_2026-03-05_pregame": {
+    "id": "0aac7c0b9b7350238d921ab4c6faf26d",
+    "away": "Toronto Raptors",
+    "home": "Minnesota Timberwolves",
+    "target": "UNDER",
+    "line": 226.5,
+    "projection": 222.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724439,
+    "timestamp": "2026-03-05T10:27:27.518397",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
