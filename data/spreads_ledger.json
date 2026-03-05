@@ -740,5 +740,20 @@
     "tweeted": false,
     "final_home_score": 106,
     "final_away_score": 102
+  },
+  "9433b263c495c0f5968b95317cc639f6_2026-03-05_pregame_spread": {
+    "id": "9433b263c495c0f5968b95317cc639f6",
+    "away": "Dallas Mavericks",
+    "home": "Orlando Magic",
+    "pick_team": "Dallas Mavericks",
+    "spread": 9.0,
+    "projected_margin": 4.2,
+    "edge": 4.8,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724369,
+    "timestamp": "2026-03-05T10:26:15.506453",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
