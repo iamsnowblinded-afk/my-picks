@@ -770,5 +770,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "0aac7c0b9b7350238d921ab4c6faf26d_2026-03-05_pregame_spread": {
+    "id": "0aac7c0b9b7350238d921ab4c6faf26d",
+    "away": "Toronto Raptors",
+    "home": "Minnesota Timberwolves",
+    "pick_team": "Toronto Raptors",
+    "spread": 6.0,
+    "projected_margin": 3.0,
+    "edge": 3.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724448,
+    "timestamp": "2026-03-05T10:27:35.155568",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
