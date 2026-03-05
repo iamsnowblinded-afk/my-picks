@@ -674,5 +674,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "2838ee4e0a7f60e2fb0fb134a84c3a76_2026-03-05_pregame": {
+    "id": "2838ee4e0a7f60e2fb0fb134a84c3a76",
+    "away": "Chicago Bulls",
+    "home": "Phoenix Suns",
+    "target": "OVER",
+    "line": 224.5,
+    "projection": 227.0,
+    "edge": 2.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724456,
+    "timestamp": "2026-03-05T10:27:43.336526",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
