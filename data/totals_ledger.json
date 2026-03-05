@@ -704,5 +704,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "3a3ada953e9680525dd22a739ea65ffd_2026-03-05_pregame": {
+    "id": "3a3ada953e9680525dd22a739ea65ffd",
+    "away": "New Orleans Pelicans",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 235.0,
+    "projection": 228.0,
+    "edge": 7.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772724488,
+    "timestamp": "2026-03-05T10:28:13.575347",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
