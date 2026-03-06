@@ -726,5 +726,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 256
+  },
+  "ab266816a618acf42cd468f0c03d88df_2026-03-06_pregame": {
+    "id": "ab266816a618acf42cd468f0c03d88df",
+    "away": "Dallas Mavericks",
+    "home": "Boston Celtics",
+    "target": "UNDER",
+    "line": 223.5,
+    "projection": 218.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772808926,
+    "timestamp": "2026-03-06T09:55:32.973211",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
