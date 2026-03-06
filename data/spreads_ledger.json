@@ -836,5 +836,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "cba1963a5da2997abeeecb331594f3d1_2026-03-06_pregame_spread": {
+    "id": "cba1963a5da2997abeeecb331594f3d1",
+    "away": "Los Angeles Clippers",
+    "home": "San Antonio Spurs",
+    "pick_team": "Los Angeles Clippers",
+    "spread": 7.5,
+    "projected_margin": 3.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772809135,
+    "timestamp": "2026-03-06T09:59:02.693807",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
