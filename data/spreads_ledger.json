@@ -821,5 +821,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "54eca7bdce16aefb75a9905bac119cbc_2026-03-06_pregame_spread": {
+    "id": "54eca7bdce16aefb75a9905bac119cbc",
+    "away": "New Orleans Pelicans",
+    "home": "Phoenix Suns",
+    "pick_team": "New Orleans Pelicans",
+    "spread": 6.0,
+    "projected_margin": 2.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772809127,
+    "timestamp": "2026-03-06T09:58:53.016078",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
