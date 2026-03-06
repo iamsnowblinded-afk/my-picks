@@ -816,5 +816,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "84b2ef875ad19e935b2b1dd513de5fb3_2026-03-06_pregame": {
+    "id": "84b2ef875ad19e935b2b1dd513de5fb3",
+    "away": "Indiana Pacers",
+    "home": "Los Angeles Lakers",
+    "target": "OVER",
+    "line": 235.5,
+    "projection": 238.0,
+    "edge": 2.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772809010,
+    "timestamp": "2026-03-06T09:56:59.404470",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
