@@ -771,5 +771,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "30131455f152309d83d6dd4173318b47_2026-03-06_pregame": {
+    "id": "30131455f152309d83d6dd4173318b47",
+    "away": "New York Knicks",
+    "home": "Denver Nuggets",
+    "target": "UNDER",
+    "line": 230.5,
+    "projection": 224.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772808955,
+    "timestamp": "2026-03-06T09:56:00.467663",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
