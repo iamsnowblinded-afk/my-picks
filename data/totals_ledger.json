@@ -741,5 +741,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d30140ada41fcf347a70f0627144f910_2026-03-06_pregame": {
+    "id": "d30140ada41fcf347a70f0627144f910",
+    "away": "Miami Heat",
+    "home": "Charlotte Hornets",
+    "target": "OVER",
+    "line": 229.5,
+    "projection": 232.0,
+    "edge": 2.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772808936,
+    "timestamp": "2026-03-06T09:55:43.316597",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
