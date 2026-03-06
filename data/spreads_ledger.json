@@ -806,5 +806,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "30131455f152309d83d6dd4173318b47_2026-03-06_pregame_spread": {
+    "id": "30131455f152309d83d6dd4173318b47",
+    "away": "New York Knicks",
+    "home": "Denver Nuggets",
+    "pick_team": "Denver Nuggets",
+    "spread": 1.5,
+    "projected_margin": 2.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772809116,
+    "timestamp": "2026-03-06T09:58:44.910692",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
