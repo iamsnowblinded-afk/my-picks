@@ -838,5 +838,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 245
+  },
+  "ad1dc68e34d3d8c8c69f10ea02d1b55a_2026-03-07_pregame": {
+    "id": "ad1dc68e34d3d8c8c69f10ea02d1b55a",
+    "away": "Orlando Magic",
+    "home": "Minnesota Timberwolves",
+    "target": "OVER",
+    "line": 224.5,
+    "projection": 228.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901885,
+    "timestamp": "2026-03-07T11:44:50.508998",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
