@@ -883,5 +883,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6ca48b4df9d476b04ce89d5f8f0c3806_2026-03-07_pregame": {
+    "id": "6ca48b4df9d476b04ce89d5f8f0c3806",
+    "away": "Los Angeles Clippers",
+    "home": "Memphis Grizzlies",
+    "target": "UNDER",
+    "line": 228.5,
+    "projection": 225.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901907,
+    "timestamp": "2026-03-07T11:45:12.463283",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
