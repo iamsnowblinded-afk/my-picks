@@ -913,5 +913,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "92a72f11c9b0e34500cf18430b89aabd_2026-03-07_pregame": {
+    "id": "92a72f11c9b0e34500cf18430b89aabd",
+    "away": "Golden State Warriors",
+    "home": "Oklahoma City Thunder",
+    "target": "OVER",
+    "line": 219.5,
+    "projection": 223.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901921,
+    "timestamp": "2026-03-07T11:45:27.690579",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
