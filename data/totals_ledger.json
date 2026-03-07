@@ -898,5 +898,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "c9d52de279acc38e1e943eadce685110_2026-03-07_pregame": {
+    "id": "c9d52de279acc38e1e943eadce685110",
+    "away": "Utah Jazz",
+    "home": "Milwaukee Bucks",
+    "target": "UNDER",
+    "line": 234.5,
+    "projection": 227.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901914,
+    "timestamp": "2026-03-07T11:45:19.362478",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
