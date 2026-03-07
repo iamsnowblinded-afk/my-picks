@@ -853,5 +853,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d2465617bbd58c113358fb2053afcd30_2026-03-07_pregame": {
+    "id": "d2465617bbd58c113358fb2053afcd30",
+    "away": "Philadelphia 76ers",
+    "home": "Atlanta Hawks",
+    "target": "UNDER",
+    "line": 233.5,
+    "projection": 226.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901892,
+    "timestamp": "2026-03-07T11:44:58.804945",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
