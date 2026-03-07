@@ -834,8 +834,9 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1772809010,
     "timestamp": "2026-03-06T09:56:59.404470",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 245
   }
 }
