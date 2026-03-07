@@ -868,5 +868,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d504db9034e7831de4702ce8e4a2ece6_2026-03-07_pregame": {
+    "id": "d504db9034e7831de4702ce8e4a2ece6",
+    "away": "Brooklyn Nets",
+    "home": "Detroit Pistons",
+    "target": "UNDER",
+    "line": 215.5,
+    "projection": 211.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772901901,
+    "timestamp": "2026-03-07T11:45:05.654264",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
