@@ -893,5 +893,20 @@
     "tweeted": false,
     "final_home_score": 113,
     "final_away_score": 99
+  },
+  "006622ec4db6bee347f96611117716b1_2026-03-08_pregame_spread": {
+    "id": "006622ec4db6bee347f96611117716b1",
+    "away": "Detroit Pistons",
+    "home": "Miami Heat",
+    "pick_team": "Miami Heat",
+    "spread": 1.5,
+    "projected_margin": 2.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772981049,
+    "timestamp": "2026-03-08T10:44:16.023268",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
