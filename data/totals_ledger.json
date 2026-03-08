@@ -1009,5 +1009,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "58bd4973656bdf3ba502e52d0343d381_2026-03-08_pregame": {
+    "id": "58bd4973656bdf3ba502e52d0343d381",
+    "away": "Orlando Magic",
+    "home": "Milwaukee Bucks",
+    "target": "OVER",
+    "line": 218.5,
+    "projection": 222.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980287,
+    "timestamp": "2026-03-08T10:31:34.143646",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
