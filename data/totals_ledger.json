@@ -949,5 +949,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "eb2b99ecfa9d75e8e25ce5b0d036f373_2026-03-08_pregame": {
+    "id": "eb2b99ecfa9d75e8e25ce5b0d036f373",
+    "away": "New York Knicks",
+    "home": "Los Angeles Lakers",
+    "target": "UNDER",
+    "line": 228.5,
+    "projection": 223.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980249,
+    "timestamp": "2026-03-08T10:30:53.614510",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
