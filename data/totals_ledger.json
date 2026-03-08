@@ -994,5 +994,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "3746240cd5d317c0378756467f415c9b_2026-03-08_pregame": {
+    "id": "3746240cd5d317c0378756467f415c9b",
+    "away": "Houston Rockets",
+    "home": "San Antonio Spurs",
+    "target": "OVER",
+    "line": 222.5,
+    "projection": 226.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980279,
+    "timestamp": "2026-03-08T10:31:24.760941",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
