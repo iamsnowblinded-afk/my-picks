@@ -964,5 +964,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1f7f16be27b4d4686fb80a5ca7952320_2026-03-08_pregame": {
+    "id": "1f7f16be27b4d4686fb80a5ca7952320",
+    "away": "Dallas Mavericks",
+    "home": "Toronto Raptors",
+    "target": "UNDER",
+    "line": 229.5,
+    "projection": 224.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980255,
+    "timestamp": "2026-03-08T10:31:02.705403",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
