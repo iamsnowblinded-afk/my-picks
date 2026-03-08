@@ -1039,5 +1039,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "deb6b3ad949cc94864c1b0bc8d76ea12_2026-03-08_pregame": {
+    "id": "deb6b3ad949cc94864c1b0bc8d76ea12",
+    "away": "Indiana Pacers",
+    "home": "Portland Trail Blazers",
+    "target": "OVER",
+    "line": 236.5,
+    "projection": 242.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980303,
+    "timestamp": "2026-03-08T10:32:07.658073",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
