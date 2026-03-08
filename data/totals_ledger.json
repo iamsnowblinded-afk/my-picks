@@ -934,5 +934,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 201
+  },
+  "f72fef0133914afa77933a8229c6f3b6_2026-03-08_pregame": {
+    "id": "f72fef0133914afa77933a8229c6f3b6",
+    "away": "Boston Celtics",
+    "home": "Cleveland Cavaliers",
+    "target": "OVER",
+    "line": 223.5,
+    "projection": 227.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980227,
+    "timestamp": "2026-03-08T10:30:46.443285",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
