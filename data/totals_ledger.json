@@ -979,5 +979,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "3eecd922fd730ebc566975991090dd48_2026-03-08_pregame": {
+    "id": "3eecd922fd730ebc566975991090dd48",
+    "away": "Washington Wizards",
+    "home": "New Orleans Pelicans",
+    "target": "UNDER",
+    "line": 244.5,
+    "projection": 238.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980272,
+    "timestamp": "2026-03-08T10:31:17.701073",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
