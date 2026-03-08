@@ -1024,5 +1024,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "0921e076bc572536f8a2ecd29ce1c426_2026-03-08_pregame": {
+    "id": "0921e076bc572536f8a2ecd29ce1c426",
+    "away": "Chicago Bulls",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 234.5,
+    "projection": 228.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1772980296,
+    "timestamp": "2026-03-08T10:31:41.179342",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
