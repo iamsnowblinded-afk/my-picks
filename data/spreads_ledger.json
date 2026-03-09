@@ -927,5 +927,20 @@
     "tweeted": false,
     "final_home_score": 138,
     "final_away_score": 118
+  },
+  "45df97b54d688962ca73235c4837a580_2026-03-09_pregame_spread": {
+    "id": "45df97b54d688962ca73235c4837a580",
+    "away": "Philadelphia 76ers",
+    "home": "Cleveland Cavaliers",
+    "pick_team": "Philadelphia 76ers",
+    "spread": 12.5,
+    "projected_margin": 8.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773064276,
+    "timestamp": "2026-03-09T09:51:22.646290",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
