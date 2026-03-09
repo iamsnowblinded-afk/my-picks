@@ -1138,5 +1138,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1fc5f15b45f76793f11e64508b1222c3_2026-03-09_pregame": {
+    "id": "1fc5f15b45f76793f11e64508b1222c3",
+    "away": "New York Knicks",
+    "home": "Los Angeles Clippers",
+    "target": "UNDER",
+    "line": 220.5,
+    "projection": 214.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773063860,
+    "timestamp": "2026-03-09T09:44:27.713882",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
