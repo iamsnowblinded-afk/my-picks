@@ -157,6 +157,27 @@
   <span class="tpedge" id="tpedge">&#8212;</span>
 </div>
 
+<!-- LAST WEEK BANNER -->
+<div id="last-week-banner" style="display:none;background:linear-gradient(135deg,#0f1a2e,#111827);border-bottom:1px solid #1e2d45;padding:10px 24px;align-items:center;gap:16px;flex-wrap:wrap">
+  <div style="font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);font-weight:700;white-space:nowrap">&#128197; Last Week</div>
+  <div style="font-size:11px;color:var(--muted)" id="lw-range">&#8212;</div>
+  <div style="display:flex;align-items:center;gap:16px;flex:1;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:11px;color:var(--muted)">Record:</span>
+      <span style="font-size:13px;font-weight:700;color:var(--text)" id="lw-rec">&#8212;</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:11px;color:var(--muted)">Win %:</span>
+      <span style="font-size:13px;font-weight:700" id="lw-pct">&#8212;</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <span style="font-size:11px;color:var(--muted)">P&amp;L:</span>
+      <span style="font-size:13px;font-weight:700" id="lw-pnl">&#8212;</span>
+    </div>
+  </div>
+  <div style="font-size:10px;color:var(--muted);background:var(--surface2);border:1px solid var(--border);border-radius:5px;padding:3px 10px;white-space:nowrap">$25 flat / -110</div>
+</div>
+
 <div class="smry">
   <div class="sc af" data-f="all"><div class="lbl">Week Picks</div><div class="val y" id="st">&#8212;</div></div>
   <div class="sc" data-f="win"><div class="lbl">Won</div><div class="val g" id="sw">&#8212;</div></div>
@@ -187,6 +208,43 @@
   <div class="sec" id="sec-nba-totals"></div>
   <div class="sec" id="sec-cbb-spreads"></div>
   <div class="sec" id="sec-cbb-totals"></div>
+
+
+  <!-- AFFILIATE SECTION -->
+  <div id="affiliate" style="margin-top:40px;border-top:1px solid var(--border);padding-top:32px">
+    <div style="max-width:780px;margin:0 auto">
+      <h2 style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:-.2px">&#127922; Place Your Bets</h2>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:20px">Use these picks on your favorite sportsbook. New to sports betting? These are the most trusted books in the US.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+        <a href="#" onclick="return false" style="display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 12px;text-decoration:none;transition:all .15s;cursor:not-allowed;opacity:.6" title="Coming soon">
+          <div style="font-size:22px">🏈</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text)">DraftKings</div>
+          <div style="font-size:10px;color:var(--muted)">Coming soon</div>
+        </a>
+        <a href="#" onclick="return false" style="display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 12px;text-decoration:none;transition:all .15s;cursor:not-allowed;opacity:.6" title="Coming soon">
+          <div style="font-size:22px">🦅</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text)">FanDuel</div>
+          <div style="font-size:10px;color:var(--muted)">Coming soon</div>
+        </a>
+        <a href="#" onclick="return false" style="display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 12px;text-decoration:none;transition:all .15s;cursor:not-allowed;opacity:.6" title="Coming soon">
+          <div style="font-size:22px">🎰</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text)">BetMGM</div>
+          <div style="font-size:10px;color:var(--muted)">Coming soon</div>
+        </a>
+        <a href="#" onclick="return false" style="display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 12px;text-decoration:none;transition:all .15s;cursor:not-allowed;opacity:.6" title="Coming soon">
+          <div style="font-size:22px">🎯</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text)">ESPN Bet</div>
+          <div style="font-size:10px;color:var(--muted)">Coming soon</div>
+        </a>
+        <a href="https://www.hardrock.bet" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--surface);border:1px solid #2a4a20;border-radius:var(--radius);padding:16px 12px;text-decoration:none;transition:border-color .15s,transform .1s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+          <div style="font-size:22px">🎸</div>
+          <div style="font-size:12px;font-weight:700;color:var(--text)">Hard Rock Bet</div>
+          <div style="font-size:10px;color:var(--green)">Available in FL ✓</div>
+        </a>
+      </div>
+      <p style="font-size:10px;color:var(--muted);margin-top:14px;line-height:1.6">&#9888; Sports betting may not be legal in your state. Please check your local laws before wagering. Must be 21+.</p>
+    </div>
+  </div>
 
   <!-- HOW IT WORKS -->
   <div id="how-it-works" style="margin-top:40px;border-top:1px solid var(--border);padding-top:32px">
@@ -253,6 +311,27 @@ function wkBounds(){const n=new Date(),dy=n.getDay(),m=new Date(n);m.setDate(n.g
 function ds(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function today(){return ds(new Date())}
 function inWeek(ts){if(!ts)return false;const{m,s}=wkBounds(),d=new Date(ts);return d>=m&&d<=s}
+function lastWkBounds(){const{m}=wkBounds(),lm=new Date(m);lm.setDate(m.getDate()-7);const ls=new Date(lm);ls.setDate(lm.getDate()+6);ls.setHours(23,59,59,999);lm.setHours(0,0,0,0);return{m:lm,s:ls}}
+function inLastWeek(ts){if(!ts)return false;const{m,s}=lastWkBounds(),d=new Date(ts);return d>=m&&d<=s}
+async function fetchLastWk(src){try{const r=await fetch(src.url+"?t="+Date.now());if(!r.ok)return[];const data=await r.json();return Object.values(data).filter(b=>inLastWeek(b.timestamp)).map(b=>({...b,ts:b.timestamp,t:src.t,lb:src.lb}))}catch(e){return[]}}
+function renderLastWeek(bets){
+  const lw=bets.filter(b=>inLastWeek(b.ts));
+  const el=document.getElementById("last-week-banner");
+  if(!el)return;
+  if(!lw.length){el.style.display="none";return}
+  const w=lw.filter(b=>b.status==="win").length,l=lw.filter(b=>b.status==="loss").length,dec=w+l;
+  if(!dec){el.style.display="none";return}
+  const pct=Math.round(w/dec*100),pnl=(w*22.73)-(l*25);
+  const{m,s}=lastWkBounds();
+  const fmt=d=>d.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+  document.getElementById("lw-range").textContent=fmt(m)+" – "+fmt(s);
+  document.getElementById("lw-rec").textContent=w+"-"+l;
+  document.getElementById("lw-pct").textContent=pct+"%";
+  document.getElementById("lw-pnl").textContent=(pnl>=0?"+$":"-$")+Math.abs(pnl).toFixed(2);
+  document.getElementById("lw-pnl").style.color=pnl>=0?"var(--green)":"var(--red)";
+  document.getElementById("lw-pct").style.color=pct>=55?"var(--green)":pct>=50?"var(--yellow)":"var(--red)";
+  el.style.display="flex";
+}
 function friendly(dateStr){const t=today(),y=ds(new Date(Date.now()-86400000));if(dateStr===t)return{label:"Today",isToday:true};if(dateStr===y)return{label:"Yesterday",isToday:false};const d=new Date(dateStr+"T12:00:00");return{label:d.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"}),isToday:false}}
 function allBets(){return Object.values(cache).flat()}
 function applyF(bets){if(flt==="all")return bets;if(flt==="today")return bets.filter(b=>(b.ts||"").startsWith(today()));if(flt==="pending")return bets.filter(b=>!["win","loss","push"].includes((b.status||"").toLowerCase()));return bets.filter(b=>(b.status||"").toLowerCase()===flt)}
@@ -275,7 +354,7 @@ async function fetchSrc(src){try{const r=await fetch(src.url+"?t="+Date.now());i
 function buildCard(bet,isTop){const st=(bet.status||"pending").toLowerCase();let mu="",pl="",res="";if(bet.t==="nba-spreads"||bet.t==="cbb-spreads"){mu=bet.away+' <span style="color:var(--muted)">@</span> '+bet.home;const sp=bet.spread>0?"+"+bet.spread:bet.spread;pl='<span class="pb">'+bet.pick_team+'</span><div class="pd">Spread: <strong>'+sp+'</strong> &nbsp;&middot;&nbsp; Proj: '+(bet.projected_margin>0?"+":"")+bet.projected_margin+"</div>";if(bet.final_home_score!=null)res=bet.away+" "+bet.final_away_score+" \u2013 "+bet.home+" "+bet.final_home_score}else{mu=bet.away+' <span style="color:var(--muted)">@</span> '+bet.home;const dir=(bet.target||"").toUpperCase();pl='<span class="pb '+dir.toLowerCase()+'">'+dir+'</span><div class="pd">Total: <strong>'+bet.line+'</strong> &nbsp;&middot;&nbsp; Proj: '+bet.projection+"</div>";if(bet.final_total!=null)res="Final total: "+bet.final_total}const cc={HIGH:"hi",MEDIUM:"md",LOW:"lo"}[bet.confidence]||"lo";const edge=parseFloat(bet.edge||0).toFixed(1);return'<div class="card '+st+(isTop?" tc":"")+'"><div class="ch"><div class="mu">'+mu+'</div><div class="tags">'+(isTop?'<span class="tbdg">\u2b50 Top</span>':"")+' <span class="stag '+bet.lb.toLowerCase()+'">'+bet.lb+'</span></div></div><div class="cbody"><div class="pr">'+pl+'</div><div class="mr"><div class="chip ec">\u26a1 Edge: '+edge+"</div>"+(bet.confidence?'<div class="chip '+cc+'">\ud83c\udfaf '+bet.confidence+"</div>":"")+(bet.is_live?'<div class="chip">\ud83d\udd34 Live</div>':"")+(bet.over_probability?'<div class="chip">'+Math.round(bet.over_probability*100)+"% prob</div>":"")+'</div></div><div class="cf"><span class="sb '+st+'">'+st+"</span><span class=\"rs\">"+res+"</span></div></div>"}
 function renderSec(container,bets){const f=applyF(bets);if(!f.length){const msg=flt==="all"?"No picks this week for this category.":"No "+(flt==="today"?"today's":flt)+" picks for this category.";container.innerHTML='<div class="empty"><div class="ei">\ud83d\udceb</div><p>'+msg+"</p></div>";return}const tb=allBets().filter(b=>(b.ts||"").startsWith(today()));const topP=tb.length?tb.reduce((best,b)=>parseFloat(b.edge||0)>parseFloat(best.edge||0)?b:best,tb[0]):null;const topK=topP?(topP.id||topP.ts):null;const groups={};for(const b of f){const d=(b.ts||"").slice(0,10);(groups[d]=groups[d]||[]).push(b)}const dates=Object.keys(groups).sort((a,b)=>b.localeCompare(a));const so={pending:0,win:1,loss:2,push:3};let h="";for(const d of dates){const db=groups[d].sort((a,b)=>(so[a.status]??0)-(so[b.status]??0));const{label,isToday}=friendly(d);const w=db.filter(b=>b.status==="win").length,l=db.filter(b=>b.status==="loss").length,dec=w+l;const rec=dec>0?w+"-"+l+" ("+Math.round(w/dec*100)+"%)":db.length+" pick"+(db.length!==1?"s":"");h+='<div class="dg"><div class="dh"><span class="dl'+(isToday?" td":"")+'">'+label+'</span><span class="drc">'+rec+'</span><hr/></div><div class="grid">'+db.map(b=>buildCard(b,isToday&&!!topK&&(b.id===topK||b.ts===topK))).join("")+"</div></div>"}container.innerHTML=h}
 function rerender(){updateFUI();const map={"all":allBets(),"nba-spreads":cache["nba-spreads"]||[],"nba-totals":cache["nba-totals"]||[],"cbb-spreads":cache["cbb-spreads"]||[],"cbb-totals":cache["cbb-totals"]||[]};for(const[k,bets]of Object.entries(map)){const c=document.getElementById("sec-"+k);if(c)renderSec(c,bets)}updatePct()}
-async function init(){const now=new Date(),{m,s}=wkBounds();const fmt=d=>d.toLocaleDateString("en-US",{month:"short",day:"numeric"});document.getElementById("wkr").textContent=fmt(m)+" \u2013 "+fmt(s);document.getElementById("lup").textContent="Updated "+now.toLocaleTimeString();const res=await Promise.all(SRCS.map(fetchSrc));cache={};for(let i=0;i<SRCS.length;i++)cache[SRCS[i].t]=res[i];document.getElementById("loading").style.display="none";const ab=allBets();const w=ab.filter(b=>b.status==="win").length,l=ab.filter(b=>b.status==="loss").length,pend=ab.filter(b=>!["win","loss","push"].includes((b.status||"").toLowerCase())).length,td=ab.filter(b=>(b.ts||"").startsWith(today()));document.getElementById("st").textContent=ab.length;document.getElementById("sw").textContent=w;document.getElementById("sl").textContent=l;document.getElementById("sp").textContent=pend;document.getElementById("spct").textContent=(w+l)?Math.round(w/(w+l)*100)+"%":"\u2014";const pnl=(w*22.73)-(l*25);const pnlEl=document.getElementById("spnl");if(pnlEl){pnlEl.textContent=(pnl>=0?"+$":"-$")+Math.abs(pnl).toFixed(2);pnlEl.style.color=pnl>0?"var(--green)":pnl<0?"var(--red)":"var(--text)"}document.getElementById("std").textContent=td.length;renderWkBar(ab);renderTopPick(ab);renderStreak(ab);const map={"all":ab,"nba-spreads":cache["nba-spreads"]||[],"nba-totals":cache["nba-totals"]||[],"cbb-spreads":cache["cbb-spreads"]||[],"cbb-totals":cache["cbb-totals"]||[]};for(const[k,bets]of Object.entries(map)){const cnt=document.getElementById("c-"+k);if(cnt)cnt.textContent=bets.length;const c=document.getElementById("sec-"+k);if(c)renderSec(c,bets)}updateFUI();updatePct()}
+async function init(){const now=new Date(),{m,s}=wkBounds();const fmt=d=>d.toLocaleDateString("en-US",{month:"short",day:"numeric"});document.getElementById("wkr").textContent=fmt(m)+" \u2013 "+fmt(s);document.getElementById("lup").textContent="Updated "+now.toLocaleTimeString();const res=await Promise.all(SRCS.map(fetchSrc));cache={};for(let i=0;i<SRCS.length;i++)cache[SRCS[i].t]=res[i];document.getElementById("loading").style.display="none";const ab=allBets();const w=ab.filter(b=>b.status==="win").length,l=ab.filter(b=>b.status==="loss").length,pend=ab.filter(b=>!["win","loss","push"].includes((b.status||"").toLowerCase())).length,td=ab.filter(b=>(b.ts||"").startsWith(today()));document.getElementById("st").textContent=ab.length;document.getElementById("sw").textContent=w;document.getElementById("sl").textContent=l;document.getElementById("sp").textContent=pend;document.getElementById("spct").textContent=(w+l)?Math.round(w/(w+l)*100)+"%":"\u2014";const pnl=(w*22.73)-(l*25);const pnlEl=document.getElementById("spnl");if(pnlEl){pnlEl.textContent=(pnl>=0?"+$":"-$")+Math.abs(pnl).toFixed(2);pnlEl.style.color=pnl>0?"var(--green)":pnl<0?"var(--red)":"var(--text)"}document.getElementById("std").textContent=td.length;renderWkBar(ab);renderTopPick(ab);renderStreak(ab);const lwres=await Promise.all(SRCS.map(fetchLastWk));const lwbets=lwres.flat();renderLastWeek(lwbets);const map={"all":ab,"nba-spreads":cache["nba-spreads"]||[],"nba-totals":cache["nba-totals"]||[],"cbb-spreads":cache["cbb-spreads"]||[],"cbb-totals":cache["cbb-totals"]||[]};for(const[k,bets]of Object.entries(map)){const cnt=document.getElementById("c-"+k);if(cnt)cnt.textContent=bets.length;const c=document.getElementById("sec-"+k);if(c)renderSec(c,bets)}updateFUI();updatePct()}
 document.querySelectorAll(".sc[data-f]").forEach(c=>{c.addEventListener("click",()=>{flt=flt===c.dataset.f?"all":c.dataset.f;rerender()})});
 document.getElementById("clrf").addEventListener("click",()=>{flt="all";rerender()});
 document.querySelectorAll(".tab").forEach(tab=>{tab.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(t=>t.classList.remove("on"));document.querySelectorAll(".sec").forEach(s=>s.classList.remove("on"));tab.classList.add("on");sec=tab.dataset.s;document.getElementById("sec-"+sec).classList.add("on");updatePct()})});
