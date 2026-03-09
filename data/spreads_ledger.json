@@ -957,5 +957,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1fc5f15b45f76793f11e64508b1222c3_2026-03-09_pregame_spread": {
+    "id": "1fc5f15b45f76793f11e64508b1222c3",
+    "away": "New York Knicks",
+    "home": "Los Angeles Clippers",
+    "pick_team": "Los Angeles Clippers",
+    "spread": 2.5,
+    "projected_margin": 3.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773064308,
+    "timestamp": "2026-03-09T09:51:55.081558",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
