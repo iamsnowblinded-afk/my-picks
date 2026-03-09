@@ -1123,5 +1123,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "e9b7eed293592882faf41217d4cdfea9_2026-03-09_pregame": {
+    "id": "e9b7eed293592882faf41217d4cdfea9",
+    "away": "Golden State Warriors",
+    "home": "Utah Jazz",
+    "target": "UNDER",
+    "line": 226.5,
+    "projection": 220.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773063845,
+    "timestamp": "2026-03-09T09:44:18.518919",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
