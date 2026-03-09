@@ -942,5 +942,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "0b99caf66dc0e57b0a2bb492e66e9b48_2026-03-09_pregame_spread": {
+    "id": "0b99caf66dc0e57b0a2bb492e66e9b48",
+    "away": "Denver Nuggets",
+    "home": "Oklahoma City Thunder",
+    "pick_team": "Denver Nuggets",
+    "spread": 7.0,
+    "projected_margin": 3.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773064292,
+    "timestamp": "2026-03-09T09:51:38.387989",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
