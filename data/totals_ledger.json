@@ -1093,5 +1093,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "cb3e1961956f4bc06c934db6acb30b32_2026-03-09_pregame": {
+    "id": "cb3e1961956f4bc06c934db6acb30b32",
+    "away": "Memphis Grizzlies",
+    "home": "Brooklyn Nets",
+    "target": "UNDER",
+    "line": 222.5,
+    "projection": 217.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773063817,
+    "timestamp": "2026-03-09T09:43:43.576906",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
