@@ -1138,9 +1138,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773063845,
     "timestamp": "2026-03-09T09:44:18.518919",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 235
   },
   "1fc5f15b45f76793f11e64508b1222c3_2026-03-09_pregame": {
     "id": "1fc5f15b45f76793f11e64508b1222c3",
