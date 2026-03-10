@@ -1218,5 +1218,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "f9792224d24b63aa28a24224ea099225_2026-03-10_pregame": {
+    "id": "f9792224d24b63aa28a24224ea099225",
+    "away": "Toronto Raptors",
+    "home": "Houston Rockets",
+    "target": "OVER",
+    "line": 217.5,
+    "projection": 222.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773157822,
+    "timestamp": "2026-03-10T11:50:27.306541",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
