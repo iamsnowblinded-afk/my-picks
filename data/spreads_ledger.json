@@ -1038,5 +1038,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "4df738bb19716e5b1ea6f389fa1fd60d_2026-03-10_pregame_spread": {
+    "id": "4df738bb19716e5b1ea6f389fa1fd60d",
+    "away": "Minnesota Timberwolves",
+    "home": "Los Angeles Lakers",
+    "pick_team": "Los Angeles Lakers",
+    "spread": 3.0,
+    "projected_margin": 1.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773158083,
+    "timestamp": "2026-03-10T11:54:55.332936",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
