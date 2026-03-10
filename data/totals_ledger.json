@@ -1154,8 +1154,9 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773063860,
     "timestamp": "2026-03-09T09:44:27.713882",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 244
   }
 }
