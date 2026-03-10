@@ -993,5 +993,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "9421796c001c679383541d472b15be1f_2026-03-10_pregame_spread": {
+    "id": "9421796c001c679383541d472b15be1f",
+    "away": "Detroit Pistons",
+    "home": "Brooklyn Nets",
+    "pick_team": "Brooklyn Nets",
+    "spread": 15.5,
+    "projected_margin": 4.0,
+    "edge": 19.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773158014,
+    "timestamp": "2026-03-10T11:53:44.556102",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
