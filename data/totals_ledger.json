@@ -1158,5 +1158,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 244
+  },
+  "e735f6e9e8e98e8b92c380f09760ec3f_2026-03-10_pregame": {
+    "id": "e735f6e9e8e98e8b92c380f09760ec3f",
+    "away": "Memphis Grizzlies",
+    "home": "Philadelphia 76ers",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 218.0,
+    "edge": 9.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773157776,
+    "timestamp": "2026-03-10T11:49:42.942875",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
