@@ -1278,5 +1278,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "4df738bb19716e5b1ea6f389fa1fd60d_2026-03-10_pregame": {
+    "id": "4df738bb19716e5b1ea6f389fa1fd60d",
+    "away": "Minnesota Timberwolves",
+    "home": "Los Angeles Lakers",
+    "target": "UNDER",
+    "line": 234.5,
+    "projection": 228.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773157859,
+    "timestamp": "2026-03-10T11:51:05.155099",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
