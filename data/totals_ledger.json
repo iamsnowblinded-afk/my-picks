@@ -1263,5 +1263,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "eacde0007a133dae3e1eee3630c04a60_2026-03-10_pregame": {
+    "id": "eacde0007a133dae3e1eee3630c04a60",
+    "away": "Indiana Pacers",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 236.5,
+    "projection": 228.0,
+    "edge": 8.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773157852,
+    "timestamp": "2026-03-10T11:50:57.192677",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
