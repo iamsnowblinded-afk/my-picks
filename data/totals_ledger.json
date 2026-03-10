@@ -1090,9 +1090,10 @@
     "confidence": "HIGH",
     "pick_time_unix": 1773063806,
     "timestamp": "2026-03-09T09:43:34.954127",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 216
   },
   "cb3e1961956f4bc06c934db6acb30b32_2026-03-09_pregame": {
     "id": "cb3e1961956f4bc06c934db6acb30b32",
