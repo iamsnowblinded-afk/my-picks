@@ -1248,5 +1248,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "25729251b2eb774717c748181096b0be_2026-03-10_pregame": {
+    "id": "25729251b2eb774717c748181096b0be",
+    "away": "Charlotte Hornets",
+    "home": "Portland Trail Blazers",
+    "target": "OVER",
+    "line": 227.5,
+    "projection": 232.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773157837,
+    "timestamp": "2026-03-10T11:50:46.023225",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
