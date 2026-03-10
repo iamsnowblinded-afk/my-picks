@@ -973,8 +973,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773064308,
     "timestamp": "2026-03-09T09:51:55.081558",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_home_score": 126,
+    "final_away_score": 118
   }
 }
