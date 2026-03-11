@@ -1362,5 +1362,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "93eb0e796df39c4bd0667f1bbc5a1cb1_2026-03-11_pregame": {
+    "id": "93eb0e796df39c4bd0667f1bbc5a1cb1",
+    "away": "Minnesota Timberwolves",
+    "home": "Los Angeles Clippers",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 223.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773242172,
+    "timestamp": "2026-03-11T11:16:18.283632",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
