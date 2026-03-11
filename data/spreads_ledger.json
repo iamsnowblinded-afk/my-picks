@@ -1093,5 +1093,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "dc635f9b3f854e9881597341b126a1ff_2026-03-11_pregame_spread": {
+    "id": "dc635f9b3f854e9881597341b126a1ff",
+    "away": "Houston Rockets",
+    "home": "Denver Nuggets",
+    "pick_team": "Houston Rockets",
+    "spread": 6.0,
+    "projected_margin": 3.0,
+    "edge": 3.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773243052,
+    "timestamp": "2026-03-11T11:30:59.097367",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
