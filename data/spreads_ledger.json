@@ -1063,5 +1063,20 @@
     "tweeted": false,
     "final_home_score": 120,
     "final_away_score": 106
+  },
+  "f017158f6d19c234ca36c9f4158a2dd7_2026-03-11_pregame_spread": {
+    "id": "f017158f6d19c234ca36c9f4158a2dd7",
+    "away": "Toronto Raptors",
+    "home": "New Orleans Pelicans",
+    "pick_team": "New Orleans Pelicans",
+    "spread": 1.5,
+    "projected_margin": 3.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773243034,
+    "timestamp": "2026-03-11T11:30:40.614622",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
