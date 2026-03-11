@@ -1078,5 +1078,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6df2d79d5f33a116e65cebdf6b58df62_2026-03-11_pregame_spread": {
+    "id": "6df2d79d5f33a116e65cebdf6b58df62",
+    "away": "New York Knicks",
+    "home": "Utah Jazz",
+    "pick_team": "New York Knicks",
+    "spread": -14.0,
+    "projected_margin": -5.0,
+    "edge": 9.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773243043,
+    "timestamp": "2026-03-11T11:30:48.178547",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
