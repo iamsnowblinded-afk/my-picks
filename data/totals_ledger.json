@@ -1302,5 +1302,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 226
+  },
+  "2b7e07f92609e7a5ad0edcfe650d99e8_2026-03-11_pregame": {
+    "id": "2b7e07f92609e7a5ad0edcfe650d99e8",
+    "away": "Cleveland Cavaliers",
+    "home": "Orlando Magic",
+    "target": "UNDER",
+    "line": 226.5,
+    "projection": 222.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773242126,
+    "timestamp": "2026-03-11T11:15:31.654029",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
