@@ -1317,5 +1317,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6df2d79d5f33a116e65cebdf6b58df62_2026-03-11_pregame": {
+    "id": "6df2d79d5f33a116e65cebdf6b58df62",
+    "away": "New York Knicks",
+    "home": "Utah Jazz",
+    "target": "UNDER",
+    "line": 229.5,
+    "projection": 224.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773242141,
+    "timestamp": "2026-03-11T11:15:46.082842",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
