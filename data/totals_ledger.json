@@ -1347,5 +1347,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "dc635f9b3f854e9881597341b126a1ff_2026-03-11_pregame": {
+    "id": "dc635f9b3f854e9881597341b126a1ff",
+    "away": "Houston Rockets",
+    "home": "Denver Nuggets",
+    "target": "OVER",
+    "line": 230.5,
+    "projection": 234.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773242157,
+    "timestamp": "2026-03-11T11:16:10.472063",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
