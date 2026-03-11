@@ -1332,5 +1332,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "9456ca1700b88516e897b6814de3681c_2026-03-11_pregame": {
+    "id": "9456ca1700b88516e897b6814de3681c",
+    "away": "Charlotte Hornets",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 224.5,
+    "projection": 219.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773242148,
+    "timestamp": "2026-03-11T11:15:55.679453",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
