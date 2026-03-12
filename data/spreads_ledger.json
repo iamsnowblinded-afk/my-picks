@@ -1114,5 +1114,20 @@
     "tweeted": false,
     "final_home_score": 129,
     "final_away_score": 93
+  },
+  "934acadeb7fcd3d3c1d79fd8b324040c_2026-03-12_pregame_spread": {
+    "id": "934acadeb7fcd3d3c1d79fd8b324040c",
+    "away": "Phoenix Suns",
+    "home": "Indiana Pacers",
+    "pick_team": "Phoenix Suns",
+    "spread": -9.0,
+    "projected_margin": -5.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773331554,
+    "timestamp": "2026-03-12T12:06:00.861794",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
