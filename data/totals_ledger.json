@@ -1397,5 +1397,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "934acadeb7fcd3d3c1d79fd8b324040c_2026-03-12_pregame": {
+    "id": "934acadeb7fcd3d3c1d79fd8b324040c",
+    "away": "Phoenix Suns",
+    "home": "Indiana Pacers",
+    "target": "UNDER",
+    "line": 223.5,
+    "projection": 218.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773338939,
+    "timestamp": "2026-03-12T14:09:06.098878",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
