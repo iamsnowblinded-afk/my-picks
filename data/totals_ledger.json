@@ -1412,5 +1412,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "262c75be6af3afb9a3e942e061ca61b4_2026-03-12_pregame": {
+    "id": "262c75be6af3afb9a3e942e061ca61b4",
+    "away": "Brooklyn Nets",
+    "home": "Atlanta Hawks",
+    "target": "OVER",
+    "line": 226.5,
+    "projection": 231.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773338956,
+    "timestamp": "2026-03-12T14:09:20.893633",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
