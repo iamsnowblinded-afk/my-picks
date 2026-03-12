@@ -1427,5 +1427,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "4c710b46284886c35732575897017b19_2026-03-12_pregame": {
+    "id": "4c710b46284886c35732575897017b19",
+    "away": "Milwaukee Bucks",
+    "home": "Miami Heat",
+    "target": "UNDER",
+    "line": 234.5,
+    "projection": 228.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773338963,
+    "timestamp": "2026-03-12T14:09:29.200062",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
