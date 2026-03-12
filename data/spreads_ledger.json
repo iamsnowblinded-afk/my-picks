@@ -1144,5 +1144,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "8139b5bfd0d6cb35977cd039afbbbc06_2026-03-12_pregame_spread": {
+    "id": "8139b5bfd0d6cb35977cd039afbbbc06",
+    "away": "Dallas Mavericks",
+    "home": "Memphis Grizzlies",
+    "pick_team": "Memphis Grizzlies",
+    "spread": 4.5,
+    "projected_margin": 3.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773331586,
+    "timestamp": "2026-03-12T12:06:32.223308",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
