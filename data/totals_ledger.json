@@ -1457,5 +1457,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "bb77f1e69f95b7403a2ab81b5bcc7a2d_2026-03-12_pregame": {
+    "id": "bb77f1e69f95b7403a2ab81b5bcc7a2d",
+    "away": "Denver Nuggets",
+    "home": "San Antonio Spurs",
+    "target": "OVER",
+    "line": 238.5,
+    "projection": 242.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773338979,
+    "timestamp": "2026-03-12T14:09:45.775389",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
