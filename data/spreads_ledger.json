@@ -1129,5 +1129,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "4c710b46284886c35732575897017b19_2026-03-12_pregame_spread": {
+    "id": "4c710b46284886c35732575897017b19",
+    "away": "Milwaukee Bucks",
+    "home": "Miami Heat",
+    "pick_team": "Milwaukee Bucks",
+    "spread": 6.5,
+    "projected_margin": 3.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773331578,
+    "timestamp": "2026-03-12T12:06:23.902100",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
