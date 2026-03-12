@@ -1382,5 +1382,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 281
+  },
+  "05abd26b6e3a0a9e4317e3948c06a097_2026-03-12_pregame": {
+    "id": "05abd26b6e3a0a9e4317e3948c06a097",
+    "away": "Philadelphia 76ers",
+    "home": "Detroit Pistons",
+    "target": "UNDER",
+    "line": 222.5,
+    "projection": 215.0,
+    "edge": 7.5,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773338930,
+    "timestamp": "2026-03-12T14:08:56.858729",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
