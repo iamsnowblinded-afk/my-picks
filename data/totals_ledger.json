@@ -1569,5 +1569,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "8f70af8b76f27c4f0a7a6957464edf9d_2026-03-13_pregame": {
+    "id": "8f70af8b76f27c4f0a7a6957464edf9d",
+    "away": "Minnesota Timberwolves",
+    "home": "Golden State Warriors",
+    "target": "UNDER",
+    "line": 224.5,
+    "projection": 220.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414328,
+    "timestamp": "2026-03-13T11:05:35.179881",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
