@@ -1584,5 +1584,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d935250226e658edb6e7a0f1eaf4edea_2026-03-13_pregame": {
+    "id": "d935250226e658edb6e7a0f1eaf4edea",
+    "away": "Utah Jazz",
+    "home": "Portland Trail Blazers",
+    "target": "UNDER",
+    "line": 236.5,
+    "projection": 228.0,
+    "edge": 8.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414337,
+    "timestamp": "2026-03-13T11:05:42.291537",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
