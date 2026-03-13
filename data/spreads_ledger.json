@@ -1180,5 +1180,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "9f90f0cfcf3b921f77ede1f83724a96f_2026-03-13_pregame_spread": {
+    "id": "9f90f0cfcf3b921f77ede1f83724a96f",
+    "away": "Memphis Grizzlies",
+    "home": "Detroit Pistons",
+    "pick_team": "Memphis Grizzlies",
+    "spread": 15.5,
+    "projected_margin": 10.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414206,
+    "timestamp": "2026-03-13T11:03:31.740825",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
