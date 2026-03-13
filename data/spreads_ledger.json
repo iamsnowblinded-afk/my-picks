@@ -1195,5 +1195,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "8d4b91d706b4ca4f3b81cc33346b3d14_2026-03-13_pregame_spread": {
+    "id": "8d4b91d706b4ca4f3b81cc33346b3d14",
+    "away": "New Orleans Pelicans",
+    "home": "Houston Rockets",
+    "pick_team": "New Orleans Pelicans",
+    "spread": 7.0,
+    "projected_margin": 2.0,
+    "edge": 5.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414224,
+    "timestamp": "2026-03-13T11:03:49.938530",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
