@@ -1165,5 +1165,20 @@
     "tweeted": false,
     "final_home_score": 112,
     "final_away_score": 120
+  },
+  "fff92660471a227787e69030342c161a_2026-03-13_pregame_spread": {
+    "id": "fff92660471a227787e69030342c161a",
+    "away": "Cleveland Cavaliers",
+    "home": "Dallas Mavericks",
+    "pick_team": "Cleveland Cavaliers",
+    "spread": -13.5,
+    "projected_margin": -8.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414196,
+    "timestamp": "2026-03-13T11:03:23.893954",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
