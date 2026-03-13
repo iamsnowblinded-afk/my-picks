@@ -1539,5 +1539,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "9d9b5899c3a11e2fb35194811631cd40_2026-03-13_pregame": {
+    "id": "9d9b5899c3a11e2fb35194811631cd40",
+    "away": "Phoenix Suns",
+    "home": "Toronto Raptors",
+    "target": "UNDER",
+    "line": 218.5,
+    "projection": 214.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773414313,
+    "timestamp": "2026-03-13T11:05:19.119169",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
