@@ -1637,5 +1637,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "385c8f2c3153a39f3b1864e324132599_2026-03-14_pregame": {
+    "id": "385c8f2c3153a39f3b1864e324132599",
+    "away": "Charlotte Hornets",
+    "home": "San Antonio Spurs",
+    "target": "OVER",
+    "line": 230.5,
+    "projection": 235.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773509241,
+    "timestamp": "2026-03-14T13:27:27.330185",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
