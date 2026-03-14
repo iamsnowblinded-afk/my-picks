@@ -1667,5 +1667,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "5b7467a257447a40f885525e863992a5_2026-03-14_pregame": {
+    "id": "5b7467a257447a40f885525e863992a5",
+    "away": "Denver Nuggets",
+    "home": "Los Angeles Lakers",
+    "target": "UNDER",
+    "line": 244.5,
+    "projection": 236.0,
+    "edge": 8.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773509256,
+    "timestamp": "2026-03-14T13:27:42.662151",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
