@@ -1652,5 +1652,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "99121dd3b759ee039a7172119402defe_2026-03-14_pregame": {
+    "id": "99121dd3b759ee039a7172119402defe",
+    "away": "Washington Wizards",
+    "home": "Boston Celtics",
+    "target": "OVER",
+    "line": 231.5,
+    "projection": 235.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773509249,
+    "timestamp": "2026-03-14T13:27:33.985302",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
