@@ -1622,5 +1622,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 227
+  },
+  "67fd3c76881fc3018d06f51684b04db5_2026-03-14_pregame": {
+    "id": "67fd3c76881fc3018d06f51684b04db5",
+    "away": "Milwaukee Bucks",
+    "home": "Atlanta Hawks",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 222.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773509233,
+    "timestamp": "2026-03-14T13:27:19.107526",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
