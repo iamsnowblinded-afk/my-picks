@@ -1261,5 +1261,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "5b7467a257447a40f885525e863992a5_2026-03-14_pregame_spread": {
+    "id": "5b7467a257447a40f885525e863992a5",
+    "away": "Denver Nuggets",
+    "home": "Los Angeles Lakers",
+    "pick_team": "Los Angeles Lakers",
+    "spread": 3.0,
+    "projected_margin": 1.0,
+    "edge": 4.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773512901,
+    "timestamp": "2026-03-14T14:28:26.500748",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
