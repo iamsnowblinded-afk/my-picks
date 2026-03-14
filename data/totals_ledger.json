@@ -1697,5 +1697,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "fd3cb91e05ed15d6fa70f51f1d305f3b_2026-03-14_pregame": {
+    "id": "fd3cb91e05ed15d6fa70f51f1d305f3b",
+    "away": "Sacramento Kings",
+    "home": "Los Angeles Clippers",
+    "target": "OVER",
+    "line": 231.5,
+    "projection": 234.0,
+    "edge": 2.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773509273,
+    "timestamp": "2026-03-14T13:27:58.229451",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
