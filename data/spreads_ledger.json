@@ -1216,5 +1216,20 @@
     "tweeted": false,
     "final_home_score": 107,
     "final_away_score": 105
+  },
+  "385c8f2c3153a39f3b1864e324132599_2026-03-14_pregame_spread": {
+    "id": "385c8f2c3153a39f3b1864e324132599",
+    "away": "Charlotte Hornets",
+    "home": "San Antonio Spurs",
+    "pick_team": "Charlotte Hornets",
+    "spread": 6.0,
+    "projected_margin": 3.0,
+    "edge": 3.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773512876,
+    "timestamp": "2026-03-14T14:28:01.998890",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
