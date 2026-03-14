@@ -1246,5 +1246,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "b356eed95fac84c751e3a07a9b013bdb_2026-03-14_pregame_spread": {
+    "id": "b356eed95fac84c751e3a07a9b013bdb",
+    "away": "Orlando Magic",
+    "home": "Miami Heat",
+    "pick_team": "Orlando Magic",
+    "spread": 4.5,
+    "projected_margin": 1.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773512893,
+    "timestamp": "2026-03-14T14:28:19.263865",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
