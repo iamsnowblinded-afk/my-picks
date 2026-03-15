@@ -1284,5 +1284,20 @@
     "tweeted": false,
     "final_home_score": 127,
     "final_away_score": 125
+  },
+  "ee20dd8148c700589a380b7f5b5c1010_2026-03-15_pregame_spread": {
+    "id": "ee20dd8148c700589a380b7f5b5c1010",
+    "away": "Detroit Pistons",
+    "home": "Toronto Raptors",
+    "pick_team": "Toronto Raptors",
+    "spread": 3.5,
+    "projected_margin": 2.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773589559,
+    "timestamp": "2026-03-15T11:46:04.433490",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
