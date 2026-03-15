@@ -1733,5 +1733,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "45f9fc1bf871b54d2392e9ec6506097f_2026-03-15_pregame": {
+    "id": "45f9fc1bf871b54d2392e9ec6506097f",
+    "away": "Dallas Mavericks",
+    "home": "Cleveland Cavaliers",
+    "target": "UNDER",
+    "line": 235.5,
+    "projection": 228.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773591673,
+    "timestamp": "2026-03-15T12:21:19.216918",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
