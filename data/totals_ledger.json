@@ -1697,9 +1697,10 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773509264,
     "timestamp": "2026-03-14T13:27:51.505803",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_total": 238
   },
   "fd3cb91e05ed15d6fa70f51f1d305f3b_2026-03-14_pregame": {
     "id": "fd3cb91e05ed15d6fa70f51f1d305f3b",
