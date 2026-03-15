@@ -1748,5 +1748,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "ee20dd8148c700589a380b7f5b5c1010_2026-03-15_pregame": {
+    "id": "ee20dd8148c700589a380b7f5b5c1010",
+    "away": "Detroit Pistons",
+    "home": "Toronto Raptors",
+    "target": "UNDER",
+    "line": 223.5,
+    "projection": 220.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773591681,
+    "timestamp": "2026-03-15T12:21:25.921436",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
