@@ -1793,5 +1793,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "f9869f17c6d1080f1c2d99d55725ce16_2026-03-15_pregame": {
+    "id": "f9869f17c6d1080f1c2d99d55725ce16",
+    "away": "Golden State Warriors",
+    "home": "New York Knicks",
+    "target": "UNDER",
+    "line": 218.5,
+    "projection": 210.0,
+    "edge": 8.5,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773591703,
+    "timestamp": "2026-03-15T12:21:48.833627",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
