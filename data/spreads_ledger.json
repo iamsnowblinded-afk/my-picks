@@ -1299,5 +1299,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6420f72c1e96bb40f11548af8dbb2950_2026-03-15_pregame_spread": {
+    "id": "6420f72c1e96bb40f11548af8dbb2950",
+    "away": "Portland Trail Blazers",
+    "home": "Philadelphia 76ers",
+    "pick_team": "Philadelphia 76ers",
+    "spread": 8.5,
+    "projected_margin": 3.0,
+    "edge": 11.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773589573,
+    "timestamp": "2026-03-15T11:46:18.836896",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
