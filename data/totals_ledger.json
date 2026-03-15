@@ -1778,5 +1778,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "6420f72c1e96bb40f11548af8dbb2950_2026-03-15_pregame": {
+    "id": "6420f72c1e96bb40f11548af8dbb2950",
+    "away": "Portland Trail Blazers",
+    "home": "Philadelphia 76ers",
+    "target": "UNDER",
+    "line": 229.5,
+    "projection": 222.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773591694,
+    "timestamp": "2026-03-15T12:21:40.739225",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
