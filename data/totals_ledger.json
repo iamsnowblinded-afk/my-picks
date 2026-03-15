@@ -1718,5 +1718,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 227
+  },
+  "689cb75979724773a16b617332228d55_2026-03-15_pregame": {
+    "id": "689cb75979724773a16b617332228d55",
+    "away": "Minnesota Timberwolves",
+    "home": "Oklahoma City Thunder",
+    "target": "UNDER",
+    "line": 227.5,
+    "projection": 223.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773591665,
+    "timestamp": "2026-03-15T12:21:11.081081",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
