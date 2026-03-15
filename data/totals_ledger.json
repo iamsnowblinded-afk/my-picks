@@ -1808,5 +1808,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "ae243acf61e3bbc8a0fef18df12adf30_2026-03-15_pregame": {
+    "id": "ae243acf61e3bbc8a0fef18df12adf30",
+    "away": "Utah Jazz",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 233.5,
+    "projection": 224.0,
+    "edge": 9.5,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773591711,
+    "timestamp": "2026-03-15T12:21:56.472654",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
