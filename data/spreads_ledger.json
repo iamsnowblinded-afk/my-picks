@@ -1314,5 +1314,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "f9869f17c6d1080f1c2d99d55725ce16_2026-03-15_pregame_spread": {
+    "id": "f9869f17c6d1080f1c2d99d55725ce16",
+    "away": "Golden State Warriors",
+    "home": "New York Knicks",
+    "pick_team": "New York Knicks",
+    "spread": -14.0,
+    "projected_margin": 20.0,
+    "edge": 6.0,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773589581,
+    "timestamp": "2026-03-15T11:46:26.679307",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
