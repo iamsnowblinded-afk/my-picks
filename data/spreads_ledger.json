@@ -1380,5 +1380,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "ed74764cb6bf8e55c87066ca2f7592fc_2026-03-16_pregame_spread": {
+    "id": "ed74764cb6bf8e55c87066ca2f7592fc",
+    "away": "Dallas Mavericks",
+    "home": "New Orleans Pelicans",
+    "pick_team": "Dallas Mavericks",
+    "spread": 8.5,
+    "projected_margin": 4.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773677702,
+    "timestamp": "2026-03-16T12:15:08.596740",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
