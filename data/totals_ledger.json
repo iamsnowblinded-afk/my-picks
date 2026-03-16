@@ -1860,5 +1860,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "b0397850f18d2c86059f0f78aefdc405_2026-03-16_pregame": {
+    "id": "b0397850f18d2c86059f0f78aefdc405",
+    "away": "Phoenix Suns",
+    "home": "Boston Celtics",
+    "target": "UNDER",
+    "line": 214.5,
+    "projection": 211.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773678671,
+    "timestamp": "2026-03-16T12:31:17.008131",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
