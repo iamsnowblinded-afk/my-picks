@@ -1365,5 +1365,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "3e7ba7718b4959c6c644a0dfdda73dcd_2026-03-16_pregame_spread": {
+    "id": "3e7ba7718b4959c6c644a0dfdda73dcd",
+    "away": "Memphis Grizzlies",
+    "home": "Chicago Bulls",
+    "pick_team": "Memphis Grizzlies",
+    "spread": 6.0,
+    "projected_margin": -3.0,
+    "edge": 9.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773677693,
+    "timestamp": "2026-03-16T12:15:00.002172",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
