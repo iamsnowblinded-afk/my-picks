@@ -1330,8 +1330,10 @@
     "confidence": "HIGH",
     "pick_time_unix": 1773589581,
     "timestamp": "2026-03-15T11:46:26.679307",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_home_score": 110,
+    "final_away_score": 107
   }
 }
