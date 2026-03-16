@@ -1905,5 +1905,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "e18bb0c990005d46d98ab6ec89f2cfff_2026-03-16_pregame": {
+    "id": "e18bb0c990005d46d98ab6ec89f2cfff",
+    "away": "Los Angeles Lakers",
+    "home": "Houston Rockets",
+    "target": "UNDER",
+    "line": 226.5,
+    "projection": 222.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773678703,
+    "timestamp": "2026-03-16T12:31:49.914411",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
