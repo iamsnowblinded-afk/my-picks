@@ -1335,5 +1335,20 @@
     "tweeted": false,
     "final_home_score": 110,
     "final_away_score": 107
+  },
+  "16a4c04f493443107656ff044ca9f8c0_2026-03-16_pregame_spread": {
+    "id": "16a4c04f493443107656ff044ca9f8c0",
+    "away": "Golden State Warriors",
+    "home": "Washington Wizards",
+    "pick_team": "Washington Wizards",
+    "spread": 7.5,
+    "projected_margin": 3.0,
+    "edge": 10.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773677668,
+    "timestamp": "2026-03-16T12:14:35.069616",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
