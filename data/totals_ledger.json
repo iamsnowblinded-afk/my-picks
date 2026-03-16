@@ -1875,5 +1875,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "b2cf48e20e7ea3f4ee141bf67f8229d1_2026-03-16_pregame": {
+    "id": "b2cf48e20e7ea3f4ee141bf67f8229d1",
+    "away": "Portland Trail Blazers",
+    "home": "Brooklyn Nets",
+    "target": "UNDER",
+    "line": 221.5,
+    "projection": 217.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773678679,
+    "timestamp": "2026-03-16T12:31:24.561264",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
