@@ -1845,5 +1845,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "16a4c04f493443107656ff044ca9f8c0_2026-03-16_pregame": {
+    "id": "16a4c04f493443107656ff044ca9f8c0",
+    "away": "Golden State Warriors",
+    "home": "Washington Wizards",
+    "target": "UNDER",
+    "line": 232.5,
+    "projection": 224.0,
+    "edge": 8.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773678663,
+    "timestamp": "2026-03-16T12:31:09.133017",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
