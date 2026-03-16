@@ -1830,5 +1830,20 @@
     "is_live": false,
     "tweeted": false,
     "final_total": 227
+  },
+  "ffe5b43309eff2a1e0131998ff33abd6_2026-03-16_pregame": {
+    "id": "ffe5b43309eff2a1e0131998ff33abd6",
+    "away": "Orlando Magic",
+    "home": "Atlanta Hawks",
+    "target": "OVER",
+    "line": 231.5,
+    "projection": 235.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773678656,
+    "timestamp": "2026-03-16T12:31:00.669659",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
