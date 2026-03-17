@@ -2017,5 +2017,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "79806ec6c1db4dc28fa93612d8269dc0_2026-03-17_pregame": {
+    "id": "79806ec6c1db4dc28fa93612d8269dc0",
+    "away": "Phoenix Suns",
+    "home": "Minnesota Timberwolves",
+    "target": "UNDER",
+    "line": 221.5,
+    "projection": 217.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778829,
+    "timestamp": "2026-03-17T16:20:35.408969",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
