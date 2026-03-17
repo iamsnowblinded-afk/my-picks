@@ -5156,5 +5156,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "9272640a0af4aec081374d0504f621d8_2026-03-17_pregame": {
+    "id": "9272640a0af4aec081374d0504f621d8",
+    "away": "Liberty Flames",
+    "home": "George Mason Patriots",
+    "target": "UNDER",
+    "line": 141.5,
+    "projection": 138.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773781997,
+    "timestamp": "2026-03-17T17:13:23.927017",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
