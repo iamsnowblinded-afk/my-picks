@@ -5172,5 +5172,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "83db61d68c8c62ef872b1eee299ab99e_2026-03-17_pregame": {
+    "id": "83db61d68c8c62ef872b1eee299ab99e",
+    "away": "NC State Wolfpack",
+    "home": "Texas Longhorns",
+    "target": "OVER",
+    "line": 158.5,
+    "projection": 162.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773782038,
+    "timestamp": "2026-03-17T17:14:03.682630",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
