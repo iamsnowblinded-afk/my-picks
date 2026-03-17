@@ -1987,5 +1987,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "9eba01d4cfa06caacc9d62a166b5a632_2026-03-17_pregame": {
+    "id": "9eba01d4cfa06caacc9d62a166b5a632",
+    "away": "Indiana Pacers",
+    "home": "New York Knicks",
+    "target": "UNDER",
+    "line": 221.5,
+    "projection": 212.0,
+    "edge": 9.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778814,
+    "timestamp": "2026-03-17T16:20:19.067527",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
