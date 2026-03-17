@@ -5236,5 +5236,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "e62a91878453459997f36fd803409c88_2026-03-20_pregame": {
+    "id": "e62a91878453459997f36fd803409c88",
+    "away": "Missouri Tigers",
+    "home": "Miami Hurricanes",
+    "target": "OVER",
+    "line": 147.5,
+    "projection": 151.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773782348,
+    "timestamp": "2026-03-17T17:19:12.688080",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
