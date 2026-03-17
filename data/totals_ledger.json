@@ -2047,5 +2047,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "352d39711b11d736c88876aa668df022_2026-03-17_pregame": {
+    "id": "352d39711b11d736c88876aa668df022",
+    "away": "San Antonio Spurs",
+    "home": "Sacramento Kings",
+    "target": "UNDER",
+    "line": 235.5,
+    "projection": 228.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778844,
+    "timestamp": "2026-03-17T16:20:50.087147",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
