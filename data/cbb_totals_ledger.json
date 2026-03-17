@@ -5188,5 +5188,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "df39114e937cbae1271ab4267afae55d_2026-03-19_pregame": {
+    "id": "df39114e937cbae1271ab4267afae55d",
+    "away": "Troy Trojans",
+    "home": "Nebraska Cornhuskers",
+    "target": "OVER",
+    "line": 137.5,
+    "projection": 141.0,
+    "edge": 3.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773782146,
+    "timestamp": "2026-03-17T17:15:54.255925",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
