@@ -1420,5 +1420,20 @@
     "tweeted": false,
     "final_home_score": 115,
     "final_away_score": 119
+  },
+  "ef96df74a063b75de7971612d1c1b18a_2026-03-17_pregame_spread": {
+    "id": "ef96df74a063b75de7971612d1c1b18a",
+    "away": "Detroit Pistons",
+    "home": "Washington Wizards",
+    "pick_team": "Detroit Pistons",
+    "spread": -19.5,
+    "projected_margin": 24.0,
+    "edge": 43.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773781825,
+    "timestamp": "2026-03-17T17:10:32.027123",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
