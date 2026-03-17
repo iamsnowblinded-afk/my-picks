@@ -114,5 +114,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "db3e72207fdfaed613898c7b4952610f_2026-03-20_pregame_spread": {
+    "id": "db3e72207fdfaed613898c7b4952610f",
+    "away": "Queens University Royals",
+    "home": "Purdue Boilermakers",
+    "pick_team": "Purdue Boilermakers",
+    "spread": -25.5,
+    "projected_margin": 34.29,
+    "edge": 8.8,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773789198,
+    "timestamp": "2026-03-17T19:13:25.138380",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
