@@ -2002,5 +2002,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "8951b3300ad3588888cb2397ea770d5e_2026-03-17_pregame": {
+    "id": "8951b3300ad3588888cb2397ea770d5e",
+    "away": "Cleveland Cavaliers",
+    "home": "Milwaukee Bucks",
+    "target": "UNDER",
+    "line": 226.5,
+    "projection": 222.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778821,
+    "timestamp": "2026-03-17T16:20:27.303813",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
