@@ -5220,5 +5220,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "8cfeb3ec76f8fe79812a18838365b21b_2026-03-20_pregame": {
+    "id": "8cfeb3ec76f8fe79812a18838365b21b",
+    "away": "Wright St Raiders",
+    "home": "Virginia Cavaliers",
+    "target": "UNDER",
+    "line": 145.5,
+    "projection": 140.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773782259,
+    "timestamp": "2026-03-17T17:17:45.776126",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
