@@ -98,5 +98,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "eb42ecd8f93efdc247e7fb30c1af465f_2026-03-18_pregame_spread": {
+    "id": "eb42ecd8f93efdc247e7fb30c1af465f",
+    "away": "Dayton Flyers",
+    "home": "Bradley Braves",
+    "pick_team": "Dayton Flyers",
+    "spread": -1.5,
+    "projected_margin": -7.4,
+    "edge": 5.9,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773789000,
+    "timestamp": "2026-03-17T19:10:06.625004",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
