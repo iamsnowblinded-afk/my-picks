@@ -1957,5 +1957,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "ef96df74a063b75de7971612d1c1b18a_2026-03-17_pregame": {
+    "id": "ef96df74a063b75de7971612d1c1b18a",
+    "away": "Detroit Pistons",
+    "home": "Washington Wizards",
+    "target": "UNDER",
+    "line": 232.5,
+    "projection": 227.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778798,
+    "timestamp": "2026-03-17T16:20:03.647024",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
