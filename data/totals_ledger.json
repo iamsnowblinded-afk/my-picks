@@ -1972,5 +1972,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "1071bc9088322a8c42c7cd80db4c8c6f_2026-03-17_pregame": {
+    "id": "1071bc9088322a8c42c7cd80db4c8c6f",
+    "away": "Oklahoma City Thunder",
+    "home": "Orlando Magic",
+    "target": "UNDER",
+    "line": 223.5,
+    "projection": 218.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773778806,
+    "timestamp": "2026-03-17T16:20:11.795962",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
