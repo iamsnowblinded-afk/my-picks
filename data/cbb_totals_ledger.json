@@ -5204,5 +5204,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "f16c056da963dd1c536ef628ca9448a1_2026-03-19_pregame": {
+    "id": "f16c056da963dd1c536ef628ca9448a1",
+    "away": "Kennesaw St Owls",
+    "home": "Gonzaga Bulldogs",
+    "target": "OVER",
+    "line": 154.5,
+    "projection": 162.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773782225,
+    "timestamp": "2026-03-17T17:17:12.437523",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
