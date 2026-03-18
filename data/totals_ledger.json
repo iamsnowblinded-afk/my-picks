@@ -2100,5 +2100,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "b8069101e24852c60cabdc606432eee7_2026-03-18_pregame": {
+    "id": "b8069101e24852c60cabdc606432eee7",
+    "away": "Oklahoma City Thunder",
+    "home": "Brooklyn Nets",
+    "target": "UNDER",
+    "line": 214.5,
+    "projection": 208.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873804,
+    "timestamp": "2026-03-18T18:43:30.243604",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
