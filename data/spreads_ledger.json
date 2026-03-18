@@ -1488,5 +1488,20 @@
     "tweeted": false,
     "final_home_score": 104,
     "final_away_score": 132
+  },
+  "b8069101e24852c60cabdc606432eee7_2026-03-18_pregame_spread": {
+    "id": "b8069101e24852c60cabdc606432eee7",
+    "away": "Oklahoma City Thunder",
+    "home": "Brooklyn Nets",
+    "pick_team": "Brooklyn Nets",
+    "spread": 18.5,
+    "projected_margin": -14.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873811,
+    "timestamp": "2026-03-18T18:43:39.034901",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
