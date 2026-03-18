@@ -2175,5 +2175,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d1b7a6b86d3200f31d702d039df933e1_2026-03-18_pregame": {
+    "id": "d1b7a6b86d3200f31d702d039df933e1",
+    "away": "Atlanta Hawks",
+    "home": "Dallas Mavericks",
+    "target": "UNDER",
+    "line": 238.5,
+    "projection": 232.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873874,
+    "timestamp": "2026-03-18T18:44:39.907286",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
