@@ -1518,5 +1518,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "c159c8836e9475f580cc678470d80c1b_2026-03-18_pregame_spread": {
+    "id": "c159c8836e9475f580cc678470d80c1b",
+    "away": "Utah Jazz",
+    "home": "Minnesota Timberwolves",
+    "pick_team": "Utah Jazz",
+    "spread": 13.5,
+    "projected_margin": 5.0,
+    "edge": 8.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873868,
+    "timestamp": "2026-03-18T18:44:33.479131",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
