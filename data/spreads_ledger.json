@@ -1533,5 +1533,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "d1b7a6b86d3200f31d702d039df933e1_2026-03-18_pregame_spread": {
+    "id": "d1b7a6b86d3200f31d702d039df933e1",
+    "away": "Atlanta Hawks",
+    "home": "Dallas Mavericks",
+    "pick_team": "Dallas Mavericks",
+    "spread": 8.5,
+    "projected_margin": 4.0,
+    "edge": 12.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873881,
+    "timestamp": "2026-03-18T18:44:47.346184",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
