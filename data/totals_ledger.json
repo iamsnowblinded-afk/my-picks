@@ -2080,8 +2080,8 @@
     "projection": 215.0,
     "edge": 7.5,
     "confidence": "MEDIUM",
-    "pick_time_unix": 1773778852,
-    "timestamp": "2026-03-17T16:20:57.221583",
+    "pick_time_unix": 1773873901,
+    "timestamp": "2026-03-18T18:45:08.149196",
     "status": "pending",
     "is_live": false,
     "tweeted": false
