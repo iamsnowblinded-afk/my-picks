@@ -1432,9 +1432,11 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773781825,
     "timestamp": "2026-03-17T17:10:32.027123",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_home_score": 117,
+    "final_away_score": 130
   },
   "1071bc9088322a8c42c7cd80db4c8c6f_2026-03-17_pregame_spread": {
     "id": "1071bc9088322a8c42c7cd80db4c8c6f",
@@ -1447,9 +1449,11 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773781836,
     "timestamp": "2026-03-17T17:10:42.141171",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "tweeted": false
+    "tweeted": false,
+    "final_home_score": 108,
+    "final_away_score": 113
   },
   "79806ec6c1db4dc28fa93612d8269dc0_2026-03-17_pregame_spread": {
     "id": "79806ec6c1db4dc28fa93612d8269dc0",
