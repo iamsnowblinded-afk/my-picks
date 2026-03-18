@@ -2130,5 +2130,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "a9e7cf9b2e8337be24987faf71d38562_2026-03-18_pregame": {
+    "id": "a9e7cf9b2e8337be24987faf71d38562",
+    "away": "Toronto Raptors",
+    "home": "Chicago Bulls",
+    "target": "UNDER",
+    "line": 237.5,
+    "projection": 228.0,
+    "edge": 9.5,
+    "confidence": "HIGH",
+    "pick_time_unix": 1773873834,
+    "timestamp": "2026-03-18T18:43:59.103276",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
