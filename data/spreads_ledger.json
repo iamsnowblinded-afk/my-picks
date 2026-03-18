@@ -1503,5 +1503,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "17096eee549e2159e71d78bb3849db57_2026-03-18_pregame_spread": {
+    "id": "17096eee549e2159e71d78bb3849db57",
+    "away": "Los Angeles Clippers",
+    "home": "New Orleans Pelicans",
+    "pick_team": "New Orleans Pelicans",
+    "spread": 2.0,
+    "projected_margin": 3.0,
+    "edge": 5.0,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873854,
+    "timestamp": "2026-03-18T18:44:20.172525",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
