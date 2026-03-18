@@ -5168,10 +5168,11 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773781997,
     "timestamp": "2026-03-17T17:13:23.927017",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
     "tweeted": false,
-    "sport": "CBB"
+    "sport": "CBB",
+    "final_total": 148
   },
   "83db61d68c8c62ef872b1eee299ab99e_2026-03-17_pregame": {
     "id": "83db61d68c8c62ef872b1eee299ab99e",
