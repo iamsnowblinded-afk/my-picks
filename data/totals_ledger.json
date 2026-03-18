@@ -2085,5 +2085,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "559e3b7523e4be26e5788e58c1e6067b_2026-03-18_pregame": {
+    "id": "559e3b7523e4be26e5788e58c1e6067b",
+    "away": "Golden State Warriors",
+    "home": "Boston Celtics",
+    "target": "UNDER",
+    "line": 216.5,
+    "projection": 212.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873790,
+    "timestamp": "2026-03-18T18:43:16.388276",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
