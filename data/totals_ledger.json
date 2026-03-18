@@ -2145,5 +2145,20 @@
     "status": "pending",
     "is_live": false,
     "tweeted": false
+  },
+  "17096eee549e2159e71d78bb3849db57_2026-03-18_pregame": {
+    "id": "17096eee549e2159e71d78bb3849db57",
+    "away": "Los Angeles Clippers",
+    "home": "New Orleans Pelicans",
+    "target": "OVER",
+    "line": 237.5,
+    "projection": 242.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773873847,
+    "timestamp": "2026-03-18T18:44:12.917233",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false
   }
 }
