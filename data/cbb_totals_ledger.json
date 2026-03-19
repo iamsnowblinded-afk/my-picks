@@ -5254,5 +5254,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "f238a7dd73a634df2b455b017e2cefe6_2026-03-19_pregame": {
+    "id": "f238a7dd73a634df2b455b017e2cefe6",
+    "away": "Hawai'i Rainbow Warriors",
+    "home": "Arkansas Razorbacks",
+    "target": "UNDER",
+    "line": 158.5,
+    "projection": 152.0,
+    "edge": 6.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773937143,
+    "timestamp": "2026-03-19T12:19:11.206228",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
