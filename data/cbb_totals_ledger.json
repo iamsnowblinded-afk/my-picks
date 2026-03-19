@@ -5318,5 +5318,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "91d3ab43f9a933f47a205f7597e8e89a_2026-03-20_pregame": {
+    "id": "91d3ab43f9a933f47a205f7597e8e89a",
+    "away": "Prairie View Panthers",
+    "home": "Florida Gators",
+    "target": "OVER",
+    "line": 155.5,
+    "projection": 161.0,
+    "edge": 5.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773937308,
+    "timestamp": "2026-03-19T12:21:54.493254",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
