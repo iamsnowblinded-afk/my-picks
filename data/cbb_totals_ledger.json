@@ -5302,5 +5302,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "73aff5152ee4b2c05eff9ae407e6d65c_2026-03-20_pregame": {
+    "id": "73aff5152ee4b2c05eff9ae407e6d65c",
+    "away": "UCF Knights",
+    "home": "UCLA Bruins",
+    "target": "UNDER",
+    "line": 152.5,
+    "projection": 148.0,
+    "edge": 4.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773937291,
+    "timestamp": "2026-03-19T12:21:37.347075",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
