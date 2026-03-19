@@ -5286,5 +5286,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "a656b2a076d07acff2b809012a37e667_2026-03-20_pregame": {
+    "id": "a656b2a076d07acff2b809012a37e667",
+    "away": "Miami (OH) RedHawks",
+    "home": "Tennessee Volunteers",
+    "target": "OVER",
+    "line": 148.5,
+    "projection": 158.0,
+    "edge": 9.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773937268,
+    "timestamp": "2026-03-19T12:21:15.854605",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
