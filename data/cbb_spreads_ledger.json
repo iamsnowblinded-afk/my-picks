@@ -110,10 +110,12 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773789000,
     "timestamp": "2026-03-17T19:10:06.625004",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
     "tweeted": false,
-    "sport": "CBB"
+    "sport": "CBB",
+    "final_home_score": 66,
+    "final_away_score": 80
   },
   "db3e72207fdfaed613898c7b4952610f_2026-03-20_pregame_spread": {
     "id": "db3e72207fdfaed613898c7b4952610f",
