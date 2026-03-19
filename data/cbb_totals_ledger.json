@@ -5270,5 +5270,21 @@
     "is_live": false,
     "tweeted": false,
     "sport": "CBB"
+  },
+  "54f2978fe672f1d22f40fb742b4e56fc_2026-03-19_pregame": {
+    "id": "54f2978fe672f1d22f40fb742b4e56fc",
+    "away": "VCU Rams",
+    "home": "North Carolina Tar Heels",
+    "target": "UNDER",
+    "line": 150.5,
+    "projection": 143.0,
+    "edge": 7.5,
+    "confidence": "MEDIUM",
+    "pick_time_unix": 1773937153,
+    "timestamp": "2026-03-19T12:19:21.019520",
+    "status": "pending",
+    "is_live": false,
+    "tweeted": false,
+    "sport": "CBB"
   }
 }
