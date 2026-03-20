@@ -5219,10 +5219,11 @@
     "confidence": "MEDIUM",
     "pick_time_unix": 1773782225,
     "timestamp": "2026-03-17T17:17:12.437523",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
     "tweeted": false,
-    "sport": "CBB"
+    "sport": "CBB",
+    "final_total": 137
   },
   "8cfeb3ec76f8fe79812a18838365b21b_2026-03-20_pregame": {
     "id": "8cfeb3ec76f8fe79812a18838365b21b",
