@@ -124,9 +124,11 @@
     "away_starter": "Tyler Glasnow",
     "pick_time_unix": 1775320343,
     "timestamp": "2026-04-04T12:32:29.094631",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 5,
+    "away_final": 10
   },
   "fc7bf2ae162241d571b69f0d343c9788_2026-04-04_pregame_rl": {
     "id": "fc7bf2ae162241d571b69f0d343c9788",
