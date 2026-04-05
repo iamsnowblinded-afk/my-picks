@@ -213,9 +213,11 @@
     "away_starter": "Nick Martinez",
     "pick_time_unix": 1775402565,
     "timestamp": "2026-04-05T11:22:51.934199",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 1,
+    "away_final": 4
   },
   "f546541ad061224570d6c2508ff82661_2026-04-05_pregame_rl": {
     "id": "f546541ad061224570d6c2508ff82661",
