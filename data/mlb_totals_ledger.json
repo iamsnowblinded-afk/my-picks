@@ -70,9 +70,10 @@
     "park_factor": 1.01,
     "pick_time_unix": 1775402647,
     "timestamp": "2026-04-05T11:24:12.094987",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "actual_runs": 3
   },
   "f9328a738af71bb6fd039c0c537f6b09_2026-04-05_pregame": {
     "id": "f9328a738af71bb6fd039c0c537f6b09",
