@@ -160,8 +160,10 @@
     "away_starter": "Clay Holmes",
     "pick_time_unix": 1775320405,
     "timestamp": "2026-04-04T12:33:30.832821",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 0,
+    "away_final": 9
   }
 }
