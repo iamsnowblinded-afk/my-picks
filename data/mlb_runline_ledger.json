@@ -179,9 +179,11 @@
     "away_starter": "Roki Sasaki",
     "pick_time_unix": 1775402534,
     "timestamp": "2026-04-05T11:22:21.397573",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 6,
+    "away_final": 8
   },
   "6cfb88cfd2f02bcfc42f9513be8da728_2026-04-05_pregame_rl": {
     "id": "6cfb88cfd2f02bcfc42f9513be8da728",
@@ -232,9 +234,11 @@
     "away_starter": "Kodai Senga",
     "pick_time_unix": 1775402593,
     "timestamp": "2026-04-05T11:23:19.691137",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 2,
+    "away_final": 5
   },
   "1c62c9b04fe7901aa7c4acfe7d37c949_2026-04-05_pregame_rl": {
     "id": "1c62c9b04fe7901aa7c4acfe7d37c949",
