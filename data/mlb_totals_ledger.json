@@ -55,5 +55,41 @@
     "is_live": false,
     "sport": "MLB",
     "actual_runs": 9
+  },
+  "318f813f9377b7ebede8b485f5ebef63_2026-04-05_pregame": {
+    "id": "318f813f9377b7ebede8b485f5ebef63",
+    "away": "Toronto Blue Jays",
+    "home": "Chicago White Sox",
+    "target": "UNDER",
+    "line": 8.0,
+    "projection": 6.2,
+    "edge": 1.8,
+    "confidence": "HIGH",
+    "home_starter": "Davis Martin",
+    "away_starter": "Eric Lauer",
+    "park_factor": 1.01,
+    "pick_time_unix": 1775402647,
+    "timestamp": "2026-04-05T11:24:12.094987",
+    "status": "pending",
+    "is_live": false,
+    "sport": "MLB"
+  },
+  "f9328a738af71bb6fd039c0c537f6b09_2026-04-05_pregame": {
+    "id": "f9328a738af71bb6fd039c0c537f6b09",
+    "away": "Seattle Mariners",
+    "home": "Los Angeles Angels",
+    "target": "UNDER",
+    "line": 9.0,
+    "projection": 6.9,
+    "edge": 2.1,
+    "confidence": "HIGH",
+    "home_starter": "Ryan Johnson",
+    "away_starter": "Luis Castillo",
+    "park_factor": 0.97,
+    "pick_time_unix": 1775402682,
+    "timestamp": "2026-04-05T11:24:48.170395",
+    "status": "pending",
+    "is_live": false,
+    "sport": "MLB"
   }
 }
