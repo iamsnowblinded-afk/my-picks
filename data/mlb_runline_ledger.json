@@ -198,9 +198,11 @@
     "away_starter": "Chris Paddack",
     "pick_time_unix": 1775402542,
     "timestamp": "2026-04-05T11:22:28.904441",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 6,
+    "away_final": 7
   },
   "e7c8fd226080f70fcf82e59c4705ede9_2026-04-05_pregame_rl": {
     "id": "e7c8fd226080f70fcf82e59c4705ede9",
