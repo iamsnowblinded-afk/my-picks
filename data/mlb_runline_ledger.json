@@ -274,9 +274,11 @@
     "away_starter": "Jameson Taillon",
     "pick_time_unix": 1775490167,
     "timestamp": "2026-04-06T11:43:16.968808",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 6,
+    "away_final": 4
   },
   "e7bc40f9611b8baa6328e83959820910_2026-04-06_pregame_rl": {
     "id": "e7bc40f9611b8baa6328e83959820910",
