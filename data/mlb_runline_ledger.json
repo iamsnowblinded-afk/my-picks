@@ -253,8 +253,10 @@
     "away_starter": "Kyle Leahy",
     "pick_time_unix": 1775402622,
     "timestamp": "2026-04-05T11:23:47.848998",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 3,
+    "away_final": 5
   }
 }
