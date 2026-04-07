@@ -388,8 +388,10 @@
     "away_starter": "Casey Mize",
     "pick_time_unix": 1775490267,
     "timestamp": "2026-04-06T11:44:33.384781",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 7,
+    "away_final": 3
   }
 }
