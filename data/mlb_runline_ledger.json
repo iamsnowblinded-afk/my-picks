@@ -293,9 +293,11 @@
     "away_starter": "Michael Wacha",
     "pick_time_unix": 1775490198,
     "timestamp": "2026-04-06T11:43:33.872489",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 2,
+    "away_final": 4
   },
   "b5ee5b660c88cd4cb3262b4b7e9f236f_2026-04-06_pregame_rl": {
     "id": "b5ee5b660c88cd4cb3262b4b7e9f236f",
@@ -310,9 +312,11 @@
     "away_starter": "Brandon Williamson",
     "pick_time_unix": 1775490214,
     "timestamp": "2026-04-06T11:43:42.565458",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 0,
+    "away_final": 2
   },
   "8638889acbe04188b2fcf40386691db5_2026-04-06_pregame_rl": {
     "id": "8638889acbe04188b2fcf40386691db5",
