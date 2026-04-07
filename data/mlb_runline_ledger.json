@@ -350,9 +350,11 @@
     "away_starter": "Brandon Woodruff",
     "pick_time_unix": 1775490232,
     "timestamp": "2026-04-06T11:44:00.608404",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 6,
+    "away_final": 8
   },
   "7b162981e371aa40406814eda380bb75_2026-04-06_pregame_rl": {
     "id": "7b162981e371aa40406814eda380bb75",
@@ -367,9 +369,11 @@
     "away_starter": "TBD",
     "pick_time_unix": 1775490258,
     "timestamp": "2026-04-06T11:44:25.901399",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 1,
+    "away_final": 2
   },
   "9587d8ccb994fa95ccf0d6ea51bb3393_2026-04-06_pregame_rl": {
     "id": "9587d8ccb994fa95ccf0d6ea51bb3393",
