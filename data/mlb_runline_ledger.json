@@ -407,9 +407,11 @@
     "away_starter": "Tarik Skubal",
     "pick_time_unix": 1775604753,
     "timestamp": "2026-04-07T19:32:39.875308",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 4,
+    "away_final": 2
   },
   "180be1fd7e6956dee1a43586959cf909_2026-04-07_pregame_rl": {
     "id": "180be1fd7e6956dee1a43586959cf909",
