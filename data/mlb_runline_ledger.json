@@ -445,9 +445,11 @@
     "away_starter": "Michael McGreevy",
     "pick_time_unix": 1775604856,
     "timestamp": "2026-04-07T19:34:23.136291",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 1,
+    "away_final": 6
   },
   "e82c967c1c766b4626e30f8560c26373_2026-04-08_pregame_rl": {
     "id": "e82c967c1c766b4626e30f8560c26373",
@@ -462,9 +464,11 @@
     "away_starter": "Grant Holmes",
     "pick_time_unix": 1775604864,
     "timestamp": "2026-04-07T19:34:30.710678",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 2,
+    "away_final": 8
   },
   "4ef0a953d5a2ee85f161aca8c6c49b3c_2026-04-08_pregame_rl": {
     "id": "4ef0a953d5a2ee85f161aca8c6c49b3c",
