@@ -426,9 +426,11 @@
     "away_starter": "Reynaldo L\u00f3pez",
     "pick_time_unix": 1775604774,
     "timestamp": "2026-04-07T19:33:00.330459",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 2,
+    "away_final": 7
   },
   "9537056b3351f36946c499786e40cfa7_2026-04-08_pregame_rl": {
     "id": "9537056b3351f36946c499786e40cfa7",
