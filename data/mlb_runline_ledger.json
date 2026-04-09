@@ -483,8 +483,10 @@
     "away_starter": "Brady Singer",
     "pick_time_unix": 1775604886,
     "timestamp": "2026-04-07T19:34:51.752052",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 7,
+    "away_final": 4
   }
 }
