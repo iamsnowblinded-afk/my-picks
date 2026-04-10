@@ -521,9 +521,11 @@
     "away_starter": "Jimmy Herget",
     "pick_time_unix": 1775768590,
     "timestamp": "2026-04-09T17:03:17.046663",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 7,
+    "away_final": 3
   },
   "23f579057c07153cd0fc94f5986b5182_2026-04-10_pregame_rl": {
     "id": "23f579057c07153cd0fc94f5986b5182",
