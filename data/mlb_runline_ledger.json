@@ -502,9 +502,11 @@
     "away_starter": "Eduardo Rodriguez",
     "pick_time_unix": 1775768573,
     "timestamp": "2026-04-09T17:03:00.596256",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 1,
+    "away_final": 7
   },
   "7d89d3d30b7d4078b13216eb9fb387d2_2026-04-09_pregame_rl": {
     "id": "7d89d3d30b7d4078b13216eb9fb387d2",
