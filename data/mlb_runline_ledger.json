@@ -635,9 +635,11 @@
     "away_starter": "Joe Ryan",
     "pick_time_unix": 1775921477,
     "timestamp": "2026-04-11T11:31:23.938444",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 4,
+    "away_final": 7
   },
   "e1a3281e16fe3ecc561ab59a2150f324_2026-04-11_pregame_rl": {
     "id": "e1a3281e16fe3ecc561ab59a2150f324",
