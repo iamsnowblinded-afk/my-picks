@@ -540,9 +540,11 @@
     "away_starter": "TBD",
     "pick_time_unix": 1775768607,
     "timestamp": "2026-04-09T17:03:34.075903",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 4,
+    "away_final": 5
   },
   "fde5a00c9e07284677e2086060505663_2026-04-10_pregame_rl": {
     "id": "fde5a00c9e07284677e2086060505663",
