@@ -108,9 +108,10 @@
     "park_factor": 1.02,
     "pick_time_unix": 1775768622,
     "timestamp": "2026-04-09T17:03:50.608457",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "actual_runs": 14
   },
   "b8b97be2c6361ef8c7839ad60c57adc3_2026-04-10_pregame": {
     "id": "b8b97be2c6361ef8c7839ad60c57adc3",
@@ -126,9 +127,10 @@
     "park_factor": 0.95,
     "pick_time_unix": 1775768639,
     "timestamp": "2026-04-09T17:04:07.586622",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "actual_runs": 8
   },
   "36591f5636cf3c3e62dda6b7e8fb3440_2026-04-10_pregame": {
     "id": "36591f5636cf3c3e62dda6b7e8fb3440",

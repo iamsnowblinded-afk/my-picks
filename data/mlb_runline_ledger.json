@@ -559,9 +559,11 @@
     "away_starter": "Simeon Woods Richardson",
     "pick_time_unix": 1775852671,
     "timestamp": "2026-04-10T16:24:38.368794",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 10,
+    "away_final": 4
   },
   "59f40327564ee4d08604733d721958f5_2026-04-10_pregame_rl": {
     "id": "59f40327564ee4d08604733d721958f5",
