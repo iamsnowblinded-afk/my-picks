@@ -597,9 +597,11 @@
     "away_starter": "Kumar Rocker",
     "pick_time_unix": 1775852750,
     "timestamp": "2026-04-10T16:25:55.637915",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 8,
+    "away_final": 7
   },
   "a23f07d17eae739724cce22627234e9d_2026-04-11_pregame_rl": {
     "id": "a23f07d17eae739724cce22627234e9d",
