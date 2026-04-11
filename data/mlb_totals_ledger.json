@@ -146,8 +146,9 @@
     "park_factor": 0.94,
     "pick_time_unix": 1775768670,
     "timestamp": "2026-04-09T17:04:35.111211",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "actual_runs": 5
   }
 }
