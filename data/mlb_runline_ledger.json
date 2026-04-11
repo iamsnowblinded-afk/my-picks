@@ -578,9 +578,11 @@
     "away_starter": "Tomoyuki Sugano",
     "pick_time_unix": 1775852736,
     "timestamp": "2026-04-10T16:25:41.653634",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 5,
+    "away_final": 2
   },
   "e346f0bf21a45185de1dcf8a928deedf_2026-04-10_pregame_rl": {
     "id": "e346f0bf21a45185de1dcf8a928deedf",
