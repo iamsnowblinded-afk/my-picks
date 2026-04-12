@@ -690,8 +690,10 @@
     "away_starter": "Foster Griffin",
     "pick_time_unix": 1775921518,
     "timestamp": "2026-04-11T11:32:05.523600",
-    "status": "pending",
+    "status": "win",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 1,
+    "away_final": 3
   }
 }
