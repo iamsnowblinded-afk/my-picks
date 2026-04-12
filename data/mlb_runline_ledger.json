@@ -673,9 +673,11 @@
     "away_starter": "Lance McCullers Jr.",
     "pick_time_unix": 1775921564,
     "timestamp": "2026-04-11T11:32:50.003958",
-    "status": "pending",
+    "status": "loss",
     "is_live": false,
-    "sport": "MLB"
+    "sport": "MLB",
+    "home_final": 8,
+    "away_final": 7
   },
   "760efdb51921a34fbd7c8547eafcb545_2026-04-11_pregame_rl": {
     "id": "760efdb51921a34fbd7c8547eafcb545",
